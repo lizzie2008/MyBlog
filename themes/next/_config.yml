@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Lancel0t, Blog"
+keywords: "博客,blog,随笔,日志,软件,web,数据库,信息化,程序员"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -48,7 +48,7 @@ footer:
   since: 2017
 
   # Icon between year and copyright info.
-  icon: user
+  icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -63,7 +63,7 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: Hosted by <a target="_blank" href="https://github.com/lizzie2008/lizzie2008.github.io">GitHub Pages</a>
+  #custom_text: Hosted by <a target="_blank" href="https://github.com/lizzie2008/lizzie2008.github.io">GitHub Pages</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -145,7 +145,7 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
+links_title: 推荐阅读
 #links_layout: block
 links_layout: inline
 links:
@@ -157,7 +157,7 @@ links:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.png
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -422,7 +422,7 @@ gitment:
 #    button | slide
 # Warning: Baidu Share does not support https.
 baidushare: 
-  type: "button"
+  type: button
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -479,7 +479,7 @@ needmoreshare2:
 #yandex_site_verification:
 
 # CNZZ count
-cnzz_siteid: 1272967332
+#cnzz_siteid: 1272967332
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/

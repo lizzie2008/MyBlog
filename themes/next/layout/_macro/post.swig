@@ -52,7 +52,7 @@
                   </span>
                 {% endif %}
                 <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">{#
-                #}{{ post.title | default(__('post.untitled'))}}{#
+                #}{% if post.top %}{{ '[置顶]' }}{% endif %}{{ post.title | default(__('post.untitled'))}}{#
               #}</a>{#
             #}{% else %}{{ post.title }}{% endif %}{#
           #}{% endif %}{#
@@ -336,6 +336,12 @@
     {### END POST BODY ###}
     {#####################}
 
+    {% if not is_index %}
+      <div>
+        {% include 'post-end-tag.swig' %}
+      </div>
+    {% endif %}
+    
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}

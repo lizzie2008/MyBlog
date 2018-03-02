@@ -6,13 +6,13 @@
 title: Lancel0tの博客
 subtitle: 记录学习的技能和遇到的问题
 description: 我们不屑与他人为伍，却害怕自己与众不同
-author: Lancel0t
+author: 原子蛋
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://lizzie2008.github.io
+url: http://myblog.lancel0t.cn/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,3 +98,9 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+  
+# sitemap
+sitemap:
+	path: sitemap.xml
+baidusitemap:
+	path: baidusitemap.xml

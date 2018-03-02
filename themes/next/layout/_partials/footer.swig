@@ -1,6 +1,6 @@
-<div class="copyright">{#
+﻿<div class="copyright">{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
-#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
+#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &ndash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love">
     <i class="fa fa-{{ theme.footer.icon }}"></i>
@@ -19,7 +19,7 @@
     #}{{ totalcount(site, '0,0.0a') }}{#
   #}</span>
   {% endif %}
-</div>
+</div>      
 
 {% if theme.footer.powered %}
   <div class="powered-by">{#
@@ -45,3 +45,14 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+	<i class="fa fa-area-chart"></i>
+  访问量:<span id="busuanzi_value_site_pv"></span>
+</span> 
+<span class="post-meta-divider">|</span>
+<span id="busuanzi_container_site_uv">
+	<i class="fa fa-user"></i>
+	访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
