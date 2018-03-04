@@ -88,6 +88,11 @@ algolia:
   adminApiKey: bb61137777554ce9c9bb3ef996197f28
   indexName: blog_name
   chunkSize: 5000
+  fields:
+	- title
+	- slug
+	- path
+	- content:strip
  
 # Feeds 
 feed:
