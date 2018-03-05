@@ -149,14 +149,11 @@ links_title: 推荐阅读
 #links_layout: block
 links_layout: inline
 links:
-  link1: http://example1.com/
-  link2: http://example2.com/
-  link3: http://example3.com/
-  link4: http://example4.com/
-  link5: http://example4.com/
-  link6: http://example4.com/
-  link7: http://example4.com/
-  link8: http://example4.com/
+  Artech-博客园: https://www.cnblogs.com/artech/
+  阮一峰的网络日志: http://www.ruanyifeng.com/blog/
+  翁天信 · Dandy Weng: https://www.dandyweng.com/
+  张鑫旭-鑫空间-鑫生活: http://www.zhangxinxu.com/
+  WEB 骇客: http://www.webhek.com/page/2
   
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -349,7 +346,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
