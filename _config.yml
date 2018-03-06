@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://myblog.lancel0t.cn/
 root: /
-permalink: articles/:title/
+permalink: posts/:title/
 permalink_defaults:
 
 # Directory
@@ -109,3 +109,8 @@ sitemap:
 	path: sitemap.xml
 baidusitemap:
 	path: baidusitemap.xml
+	
+server:
+  port: 5000
+  compress: true
+  header: true

@@ -5,14 +5,13 @@ tags:
   - 编程技巧
   - 数据结构
 categories: 计算机基础
-date: 2018-01-01
+date: 2017-01-01
 ---
-![avatar](/uploads/images/43aa6878-123e-40ae-84c5-ca0e19bee1ae.jpg)
+![avatar](/uploads/images/450f7e84-27ba-4178-8de0-a890e41cb713.jpg)
 ### 描述
 >Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
-<!-- more -->
 ### 示例
  ```
 Given nums = [1,1,2],
@@ -21,14 +20,16 @@ Your function should return length = 2, with the first two elements of nums bein
 1 and 2 respectively.
 It doesn't matter what you leave beyond the new length.
  ```
-### 算法
->**难度**：简单
+<!-- more -->
+### 算法分析
+**难度**：低
 **分析**：要求给定的排序后的数组，将其中重复的元素去除（是的每个元素只出现一次），并返回最终数组的长度。算法不要分配额外的数组空间。
 **思路**：既然输入的数组已然排好序，我们可以定义i,j两个数组下标值，开始i初始为0，j从1开始，遍历数组：
 如果数组[j]==数组[i],表示有重复，重复元素个数i不用累计，遍历数组下一条;
 如果数组[j]！=数组[i]，表示没有重复，把数组[i]值用数组[j]替代，这样数组0-i为新的数组，且不重复,i自增+1，比较下一个元素;
 依次遍历，直到数组[j]至最后一个元素。
 
+### 代码实例(C#)
 ```csharp
 public static int RemoveDuplicates(int[] nums)
 {                                             
@@ -49,5 +50,6 @@ public static int RemoveDuplicates(int[] nums)
 - **时间复杂度**：*O* (n). i,j最多遍历n次
 - **空间复杂度**：*O* (1).
 
-
+### 相关算法
+- [RemoveDuplicates II](/posts/algorithm/RemoveDuplicates II/)
 
