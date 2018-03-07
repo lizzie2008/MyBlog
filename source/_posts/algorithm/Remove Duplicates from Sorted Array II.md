@@ -1,5 +1,5 @@
 ﻿---
-title: 算法题库丨RemoveDuplicates II
+title: 算法题丨Remove Duplicates from Sorted Array II
 tags:
   - 算法
   - 编程技巧
@@ -30,7 +30,7 @@ being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
 &emsp;2. 如果满足，把数组[i-2]值赋值给数组[i],数组0-i的元素都为有效值,i自加1;
 再次循环判断，一直到数组最后一个元素.
 
-### 代码实例(C#)
+### 代码示例(C#)
 ```csharp
  public static int RemoveDuplicates2(int[] nums)
  {
@@ -47,7 +47,10 @@ being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (1).
 
-### 相关算法
-- [Remove Duplicates](/posts/algorithm/RemoveDuplicates/)
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法
+	- [Remove Duplicates from Sorted Array](/posts/algorithm/Remove Duplicates from Sorted Array/)
 
 

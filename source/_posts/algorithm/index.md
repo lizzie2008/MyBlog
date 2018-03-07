@@ -1,5 +1,5 @@
 ﻿---
-title: 算法题库系列丨目录索引
+title: 算法题丨目录索引
 tags:
   - 算法
   - 编程技巧
@@ -13,17 +13,17 @@ top: 100
 &emsp;&emsp;本系列的受众目标是对算法有兴趣的、愿意和我一起进步、学习和提高的同学，要求有一定的数据结构基础，链表、排序、二叉树等等一些基本知识，可能需要一些基础的数学知识。如果这方面有所欠缺或不懂的，请自行找相关资料看一下，笔者就不再累述了。
 &emsp;&emsp;文章旨在帮助大家学习和整理算法，分门别类的总结相关知识点和平台上对应的算法题。每题都有完整的示例代码，都是综合整理各位大牛的代码，精炼出尽可能简短的，并且每段代码笔者也测试验证过，保证正确有效，可以参考文末资料中的代码，下载并调试。
 &emsp;&emsp;算法试题多是从POJ,ZOJ,LeetCode等网站获取，一些题的解题思路在作者自己实现过程中，也参考广大网友提供的solution。另外，目前只是列出了大体的框架，有些算法个人还没有实现，我会持续不断更新的，希望大家能多多关注，也欢迎给我留言。
-&emsp;&emsp;最后关键一点是：希望笔者不仅仅是在告诉你what，而且告诉你why（分析各种算法的思路和优缺点），以便大家可以举一反三！
+&emsp;&emsp;最后笔者的目标是：不仅仅是在告诉what，而且告诉why（分析各种算法的思路和优缺点），希望大家可以举一反三！
 <!-- more -->
 
 ### 文章目录
 - Linear List
 	- Array
-		- [Remove Duplicates from Sorted Array](/posts/algorithm/RemoveDuplicates/)
-		- [Remove Duplicates from Sorted Array II](/posts/algorithm/RemoveDuplicates II/)
+		- [Remove Duplicates from Sorted Array](/posts/algorithm/Remove Duplicates from Sorted Array/)
+		- [Remove Duplicates from Sorted Array II](/posts/algorithm/Remove Duplicates from Sorted Array II/)
 		- [Longest Consecutive Sequence](/posts/algorithm/Longest Consecutive Sequence/)
-		- Two Sum
-		- 3Sum
+		- [Two Sum](/posts/algorithm/Two Sum/)
+		- [3Sum](/posts/algorithm/3Sum/)
 		- 3Sum Closest
 		- 4Sum
 		- Remove Element
@@ -193,5 +193,7 @@ top: 100
 
 ### 相关资料
 - [LeetCode](https://leetcode.com/problemset/all/)
+- [POJ](http://poj.org/problemlist)
+- [ZOJ](http://acm.zju.edu.cn/onlinejudge/showProblemsets.do)
 - [算法珠玑](https://www.gitbook.com/book/soulmachine/algorithm-essentials/details)
 - [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)

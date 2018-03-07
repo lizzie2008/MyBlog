@@ -1,5 +1,5 @@
 ﻿---
-title: 算法题库丨Longest Consecutive Sequence
+title: 算法题丨Longest Consecutive Sequence
 tags:
   - 算法
   - 编程技巧
@@ -30,7 +30,8 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 &emsp;&emsp;c). 开始后续比较，如果哈希表存在currentNum+1的元素，表示当前元素currentNum有后续相邻的元素，连续的元素为之前最大连续元素次数+1，开始下个一个元素比较，即currentNum+1;
 &emsp;&emsp;d). 后续比较结束后，将本次循环获得的currentStreak作为本次循环记录的最大连续元素个数，记录本次最大连续次数currentStreak和之前最大连续次数longestStreak的最大值到longestStreak，并进入下一个循环遍历;
 &emsp;3. 循环遍历结束后，返回最大连续次数longestStreak;
-### 代码实例(C#)
+
+### 代码示例(C#)
 ```csharp
 public int LongestConsecutive(int[] nums)
 {
@@ -59,4 +60,6 @@ public int LongestConsecutive(int[] nums)
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (n).
 
-
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)

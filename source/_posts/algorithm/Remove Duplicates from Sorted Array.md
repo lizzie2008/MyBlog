@@ -1,5 +1,5 @@
 ﻿---
-title: 算法题库丨RemoveDuplicates
+title: 算法题丨Remove Duplicates from Sorted Array
 tags:
   - 算法
   - 编程技巧
@@ -29,7 +29,7 @@ It doesn't matter what you leave beyond the new length.
 如果数组[j]！=数组[i]，表示没有重复，把数组[i]值用数组[j]替代，这样数组0-i为新的数组，且不重复,i自增+1，比较下一个元素;
 依次遍历，直到数组[j]至最后一个元素。
 
-### 代码实例(C#)
+### 代码示例(C#)
 ```csharp
 public static int RemoveDuplicates(int[] nums)
 {                                             
@@ -50,6 +50,9 @@ public static int RemoveDuplicates(int[] nums)
 - **时间复杂度**：*O* (n). i,j最多遍历n次
 - **空间复杂度**：*O* (1).
 
-### 相关算法
-- [RemoveDuplicates II](/posts/algorithm/RemoveDuplicates II/)
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法
+	- [Remove Duplicates from Sorted Array II](/posts/algorithm/Remove Duplicates from Sorted Array II/)
 

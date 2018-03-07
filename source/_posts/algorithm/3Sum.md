@@ -1,0 +1,69 @@
+﻿---
+title: 算法题丨3Sum
+tags:
+  - 算法
+  - 编程技巧
+  - 数据结构
+categories: 计算机基础
+date: 2017-01-05
+---
+![avatar](/uploads/images/76c00dbe-031a-40f9-b1ed-d0083dbfe805.jpg)
+### 描述
+>Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+Note: The solution set must not contain duplicate triplets.
+
+### 示例
+ ```
+Given array S = [-1, 0, 1, 2, -1, -4],
+
+A solution set is:
+[
+  [-1, 0, 1],
+  [-1, -1, 2]
+]
+ ```
+<!-- more -->
+### 算法分析
+**难度**：中
+**分析**：要求给定的数组，找出满足条件的3个元素组合，使得3个元素之和等于零。注意，元素不能重复(值可以相同)。
+**思路**：首先，我们需要对数组进行排序，因为数组已经排序，所以只要向后查找即可，不用往前查找，比如数组变为[-4, -1, -1, 0, 1, 2];
+我们开始遍历排序后的数组，假设当前元素是x，判断本次遍历有解的条件可以转化为找到当前元素之后2个元素和，应该等于0-x，再使用夹逼，检查是否有解，如果有，增加到返回队列，没有的话，进入下一次的遍历，直至找到所有满足条件组合。
+
+### 代码实例(C#)
+```csharp
+public IList<IList<int>> ThreeSum(int[] nums)
+{
+    Array.Sort(nums);
+
+    var res = new List<IList<int>>();
+    for (int i = 0; i < nums.Length - 2; i++)
+    {
+        if (i == 0 || (i > 0 && nums[i] != nums[i - 1]))
+        {
+            int lo = i + 1, hi = nums.Length - 1, sum = 0 - nums[i];
+            while (lo < hi)
+            {
+                if (nums[lo] + nums[hi] == sum)
+                {
+                    res.Add(new List<int> { nums[i], nums[lo], nums[hi] });
+                    while (lo < hi && nums[lo] == nums[lo + 1]) lo++;
+                    while (lo < hi && nums[hi] == nums[hi - 1]) hi--;
+                    lo++; hi--;
+                }
+                else if (nums[lo] + nums[hi] < sum) lo++;
+                else hi--;
+            }
+        }
+    }
+    return res;
+}                                      
+ ```
+### 复杂度
+- **时间复杂度**：*O* (n²). 
+- **空间复杂度**：*O* (1).
+
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法
+

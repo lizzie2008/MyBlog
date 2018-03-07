@@ -58,3 +58,24 @@
 .post-nav-divider {
 	display:none;
 }
+
+.colorful a {
+	color: #E16132;
+	margin-right: 5px;
+	text-decoration: none;
+	padding: 3px 0;
+}
+@supports (-webkit-transform: scale(0)) {
+	.colorful {
+		/*-webkit-mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);*/
+		background-image: linear-gradient(to right, red, orange, green, blue, green, orange, red, orange, green, blue, green, orange, red);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    -webkit-background-size: 200% 100%;
+	    animation: bgp 5s infinite linear;
+	}
+}
+@-webkit-keyframes bgp {
+    0%  { background-position: 0 0;}
+    100% { background-position: -100% 0;}
+}

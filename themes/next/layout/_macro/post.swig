@@ -52,7 +52,7 @@
                   </span>
                 {% endif %}
                 <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">{#
-                #}{% if post.top %}【置顶】{% endif %}{{ post.title | default(__('post.untitled'))}}{#
+                #}{% if post.top %}<span class="colorful">【置顶】</span>{% endif %}{{ post.title | default(__('post.untitled'))}}{#
               #}</a>{#
             #}{% else %}{{ post.title }}{% endif %}{#
           #}{% endif %}{#
