@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-06
 ---
-![avatar](/uploads/images/76c00dbe-031a-40f9-b1ed-d0083dbfe805.jpg)
+![avatar](/uploads/images/f47f6f4c-c7c9-4e1c-af4e-2f8616947e97.jpg)
 ### 描述
 >Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
 Return the sum of the three integers. You may assume that each input would have exactly one solution.
