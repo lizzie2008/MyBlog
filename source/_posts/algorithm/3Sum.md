@@ -26,16 +26,18 @@ A solution set is:
 ### 算法分析
 **难度**：中
 **分析**：要求给定的数组，找出满足条件的3个元素组合，使得3个元素之和等于零。注意，元素不能重复(值可以相同)。
-**思路**：首先，我们需要对数组进行排序，因为数组已经排序，所以只要向后查找即可，不用往前查找，比如数组变为[-4, -1, -1, 0, 1, 2];
-我们开始遍历排序后的数组，假设当前元素是x，判断本次遍历有解的条件可以转化为找到当前元素之后2个元素和，应该等于0-x，再使用夹逼，检查是否有解，如果有，增加到返回队列，没有的话，进入下一次的遍历，直至找到所有满足条件组合。
+**思路**：首先，我们需要对数组进行排序，比如数组排序后变为[-4, -1, -1, 0, 1, 2]，我们判断第一个元素-4，判断它之后是否有2个元素的和等于4，如果有的话满足条件。因为数组已经排序，只要向当前元素之后查找即可，不用往前查找；
+接下来，我们开始遍历排序后的数组，假设当前元素是x，判断本次遍历有解的条件可以转化为找到当前元素之后2个元素和，应该等于0-x，使用夹逼查找方法，检查是否有解，如果有，增加到返回队列，没有的话，进入下一次的遍历，直至找到所有满足条件组合。
 
 ### 代码实例(C#)
 ```csharp
 public IList<IList<int>> ThreeSum(int[] nums)
 {
+    //排序
     Array.Sort(nums);
-
     var res = new List<IList<int>>();
+
+    //当前元素向后匹配2个元素，所以最后2个元素不用被遍历
     for (int i = 0; i < nums.Length - 2; i++)
     {
         if (i == 0 || (i > 0 && nums[i] != nums[i - 1]))
@@ -43,11 +45,14 @@ public IList<IList<int>> ThreeSum(int[] nums)
             int lo = i + 1, hi = nums.Length - 1, sum = 0 - nums[i];
             while (lo < hi)
             {
+                //找到满足条件元素，添加到返回结果队列
                 if (nums[lo] + nums[hi] == sum)
                 {
                     res.Add(new List<int> { nums[i], nums[lo], nums[hi] });
+                    //防止重复元素
                     while (lo < hi && nums[lo] == nums[lo + 1]) lo++;
                     while (lo < hi && nums[hi] == nums[hi - 1]) hi--;
+                    //夹逼查找
                     lo++; hi--;
                 }
                 else if (nums[lo] + nums[hi] < sum) lo++;
@@ -56,7 +61,7 @@ public IList<IList<int>> ThreeSum(int[] nums)
         }
     }
     return res;
-}                                      
+}                                  
  ```
 ### 复杂度
 - **时间复杂度**：*O* (n²). 

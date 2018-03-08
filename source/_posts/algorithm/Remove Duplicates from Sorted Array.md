@@ -24,27 +24,28 @@ It doesn't matter what you leave beyond the new length.
 ### 算法分析
 **难度**：低
 **分析**：要求给定的排序后的数组，将其中重复的元素去除（是的每个元素只出现一次），并返回最终数组的长度。算法不要分配额外的数组空间。
-**思路**：既然输入的数组已然排好序，我们可以定义i,j两个数组下标值，开始i初始为0，j从1开始，遍历数组：
+**思路**：既然输入的数组已然排好序，我们可以定义i,j两个数组下标值，开始i初始为0，用来记录数组中有效元素下标，j从1开始，用来记录遍历数组的下标：
 如果数组[j]==数组[i],表示有重复，重复元素个数i不用累计，遍历数组下一条;
-如果数组[j]！=数组[i]，表示没有重复，把数组[i]值用数组[j]替代，这样数组0-i为新的数组，且不重复,i自增+1，比较下一个元素;
-依次遍历，直到数组[j]至最后一个元素。
+如果数组[j]！=数组[i]，表示没有重复，有效元素下标i自增+1，把数组[i]值用数组[j]替代，比较下一个元素;
+依次遍历，直到数组[j]至最后一个元素，最终[0,i]范围内的数组元素，即为题目要求的结果。
 
 ### 代码示例(C#)
 ```csharp
-public static int RemoveDuplicates(int[] nums)
-{                                             
-    if (nums.Length == 0) return 0;           
-    int i = 0;                                
-    for (int j = 1; j < nums.Length; j++)     
-    {                                         
-        if (nums[j] != nums[i])               
-        {                                     
-            i++;                              
-            nums[i] = nums[j];                
-        }                                     
-    }                                         
-    return i + 1;                             
-}                                             
+public int RemoveDuplicates(int[] nums)
+{
+    if (nums.Length == 0) return 0;
+    int i = 0;
+    for (int j = 1; j < nums.Length; j++)
+    {
+        //不重复的话，有效索引+1，将当前元素值记录在索引对应的数组上
+        if (nums[j] != nums[i])
+        {
+            i++;
+            nums[i] = nums[j];
+        }
+    }
+    return i + 1;
+}                                           
  ```
 ### 复杂度
 - **时间复杂度**：*O* (n). 

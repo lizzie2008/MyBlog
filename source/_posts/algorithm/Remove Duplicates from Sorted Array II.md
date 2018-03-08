@@ -23,25 +23,24 @@ being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
 ### 算法分析
 **难度**：中
 **分析**：条件参考[Remove Duplicates](/posts/algorithm/RemoveDuplicates/)，只不过之前元素只允许重复1次，现在改为最多可以重复2次。
-**思路**：输入的数组任然排好序的，我们定义i,从i=0开始，依次遍历数组中的每个元素：
-当i<2时，不管怎样，元素都会满足条件，也就是说，前2条数据总是满足最多重复2次;
-当i>2时，比较遍历当前元素数组[i]是否满足大于元素数组[i-2]：
-&emsp;1. 如果不满足，i值不变，遍历下个元素;
-&emsp;2. 如果满足，把数组[i-2]值赋值给数组[i],数组0-i的元素都为有效值,i自加1;
-再次循环判断，一直到数组最后一个元素.
+**思路**：既然输入的数组排好序的，那我们定义一个有效元素的数组长度变量i，然后开始遍历元素：
+&emsp;1. 检索当前元素之前的2个元素，如果跟当前元素相等，说明不满足最多重复2次的条件了，这时候有效元素的数组长度i就不要再自增了；
+&emsp;2. 否则的话，之前的2个元素，如跟当前元素不相等（小于），说明这个当前元素为有效值，所以将数组末尾元素赋值当前元素,有效元素的数组长度i自增1；
+依照上述逻辑循环判断，一直到数组最后一个元素，循环结束后，根据有效元素的数组长度i，获得[0,i)范围内的数组元素，即为题目要求的结果。
 
 ### 代码示例(C#)
 ```csharp
- public static int RemoveDuplicates2(int[] nums)
- {
-     int i = 0;
-     foreach (var num in nums)
-     {
-         if (i < 2 || num > nums[i - 2])
-             nums[i++] = num;
-     }
-     return i;
- }                                             
+public int RemoveDuplicates2(int[] nums)
+{
+    int i = 0;
+    foreach (var num in nums)
+    {
+        //判断是否有2个以上重复，有的话有效索引+1，并将当前元素赋值到有效数组
+        if (i < 2 || num > nums[i - 2])
+            nums[i++] = num;
+    }
+    return i;
+}                                           
  ```
 ### 复杂度
 - **时间复杂度**：*O* (n). 

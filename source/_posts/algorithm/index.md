@@ -24,7 +24,7 @@ top: 100
 		- [Longest Consecutive Sequence](/posts/algorithm/Longest Consecutive Sequence/)
 		- [Two Sum](/posts/algorithm/Two Sum/)
 		- [3Sum](/posts/algorithm/3Sum/)
-		- 3Sum Closest
+		- [3Sum Closest](/posts/algorithm/3Sum Closest/)
 		- 4Sum
 		- Remove Element
 		- Move Zeroes

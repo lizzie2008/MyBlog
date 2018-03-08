@@ -36,25 +36,31 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 public int LongestConsecutive(int[] nums)
 {
     var numSet = new HashSet<int>(nums);
+    //记录最大连续元素个数
     int longestStreak = 0;
-    
+
     foreach (int num in numSet)
     {
+        //存在跟当前元素连续的值
         if (!numSet.Contains(num - 1))
         {
             int currentNum = num;
             int currentStreak = 1;
 
+            //每匹配到后面连续的元素，当前最大连续元素个数+1
             while (numSet.Contains(currentNum + 1))
             {
                 currentNum += 1;
                 currentStreak += 1;
             }
+
+            //最大连续元素个数取当前最大连续元素和记录的最大连续元素个数两者最大者
             longestStreak = Math.Max(longestStreak, currentStreak);
         }
     }
+
     return longestStreak;
-}                                            
+}                                          
  ```
 ### 复杂度
 - **时间复杂度**：*O* (n). 

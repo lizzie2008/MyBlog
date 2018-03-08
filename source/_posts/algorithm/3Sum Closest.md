@@ -1,0 +1,71 @@
+﻿---
+title: 算法题丨3Sum Closest
+tags:
+  - 算法
+  - 编程技巧
+  - 数据结构
+categories: 计算机基础
+date: 2017-01-06
+---
+![avatar](/uploads/images/76c00dbe-031a-40f9-b1ed-d0083dbfe805.jpg)
+### 描述
+>Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
+Return the sum of the three integers. You may assume that each input would have exactly one solution.
+
+### 示例
+```
+Given array S = {-1 2 1 -4}, and target = 1.
+
+The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+```
+<!-- more -->
+### 算法分析
+**难度**：中
+**分析**：给定整型数组中和一个指定的目标整型值，从数组中找到3个元素之和，满足最接近目标值的唯一组合，返回结果为3个元素之和。
+**思路**：大体思路类似3Sum算法，也是先将数组排序，然后开始遍历，3个元素分别是当前遍历的元素、夹逼开始元素默认当前元素后面的元素，夹逼结束元素默认数组最后的元素，通过夹逼开始元素递增和夹逼结束元素递减来实现夹逼：
+&emsp;1. 如果这3个元素之和比目标值大，则需要夹逼结束元素值变小，才有可能接近目标值，所以夹逼结束元素递减；
+&emsp;2. 如果这3个元素之和不比目标值大，则需要夹逼开始元素值变大，才有可能接近目标值，所以夹逼开始元素递增；
+本次遍历结束后，再判断本次3元素之和目前记录的最接近之和比较，取更接近的做为返回结果，然后继续遍历，直至遍历结果，获得返回结果。
+
+### 代码实例(C#)
+```csharp
+public int ThreeSumClosest(int[] nums, int target)
+{
+    int res = nums[0] + nums[1] + nums[nums.Length - 1];
+
+    //排序后遍历
+    Array.Sort(nums);
+    for (int i = 0; i < nums.Length - 2; i++)
+    {
+        //从当前后面的元素和最后一个元素，两边夹逼
+        int lo = i + 1, hi = nums.Length - 1;
+        while (lo < hi)
+        {
+            int sum = nums[i] + nums[lo] + nums[hi];
+            if (sum > target)
+            {
+                hi--;
+            }
+            else
+            {
+                lo++;
+            }
+            //如果此次遍历的3个元素的和更接近，则赋值返回的结果
+            if (Math.Abs(sum - target) < Math.Abs(res - target))
+            {
+                res = sum;
+            }
+        }
+    }
+    return res;
+}                                 
+```
+### 复杂度
+- **时间复杂度**：*O* (n²). 
+- **空间复杂度**：*O* (1).
+
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法
+
