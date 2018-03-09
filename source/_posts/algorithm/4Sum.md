@@ -1,0 +1,94 @@
+﻿---
+title: 算法题丨4Sum
+tags:
+  - 算法
+  - 编程技巧
+  - 数据结构
+categories: 计算机基础
+date: 2017-01-07
+---
+![avatar](/uploads/images/86f0a3c8-88b2-44bb-9d80-45252c26b617.jpg)
+### 描述
+>Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? 
+Find all unique quadruplets in the array which gives the sum of target.
+Note: The solution set must not contain duplicate quadruplets.
+
+### 示例
+```
+Given array S = [1, 0, -1, 0, -2, 2], and target = 0.
+
+A solution set is:
+[
+  [-1,  0, 0, 1],
+  [-2, -1, 1, 2],
+  [-2,  0, 0, 2]
+]
+```
+<!-- more -->
+### 算法分析
+**难度**：中
+**分析**：给定整型数组和指定一个整型目标值，从整形数组中找出4个不同的元素，使得4个元素之和等于目标值，返回结果为所有满足上述条件的元素组合。
+**思路**：思路可以参考[3Sum](/posts/algorithm/3Sum/)，主要难度是由原先的找3个元素之和，变成了找4个元素之和。这种情况下，其实有点像解魔方：玩五阶魔方就是从五阶降到四阶，然后再从四阶降到三阶，最后再按照玩三阶魔方的方法解决问题。
+最终的解法，其实就是在3阶解法的基础上，在外层再套一层4阶的循环，并做一些基础的判断，复杂度也是在3阶n²基础上*n=n³，当然，这种算法也可推广到n阶。
+
+### 代码示例(C#)
+```csharp
+public IList<IList<int>> FourSum(int[] nums, int target)
+{
+    List<IList<int>> res = new List<IList<int>>();
+    if (nums.Length < 4) return res;
+
+    //排序
+    Array.Sort(nums);
+    //4阶判断
+    for (int i = 0; i < nums.Length - 3; i++)
+    {
+        //如果最近4个元素之和都大于目标值，因为数组是排序的，后续只可能更大，所以跳出循环
+        if (nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3] > target) break;
+        //当前元素和最后3个元素之和小于目标值即本轮最大值都小于目标值，则本轮不满足条件，跳过本轮
+        if (nums[i] + nums[nums.Length - 1] + nums[nums.Length - 2] + nums[nums.Length - 3] < target)
+            continue;
+        //防止重复组合
+        if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+        //3阶判断
+        for (int j = i + 1; j < nums.Length - 2; j++)
+        {
+            //原理同4阶判断
+            if (nums[i] + nums[j] + nums[j + 1] + nums[j + 2] > target) break;
+            if (nums[i] + nums[j] + nums[nums.Length - 1] + nums[nums.Length - 2] < target)
+                continue;
+
+            int lo = j + 1, hi = nums.Length - 1;
+            while (lo < hi)
+            {
+                //已知元素 nums[i],nums[j],剩下2个元素做夹逼
+                int sum = nums[i] + nums[j] + nums[lo] + nums[hi];
+                if (sum == target)
+                {
+                    res.Add(new List<int> { nums[i], nums[j], nums[lo], nums[hi] });
+                    while (lo < hi && nums[lo] == nums[lo + 1]) lo++;
+                    while (lo < hi && nums[hi] == nums[hi - 1]) hi--;
+                    lo++;
+                    hi--;
+                }
+                //两边夹逼
+                else if (sum < target) lo++;
+                else hi--;
+            }
+        }
+    }
+    return res;
+}                               
+```
+### 复杂度
+- **时间复杂度**：*O* (n³). 
+- **空间复杂度**：*O* (1).
+
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法
+	- [Two Sum](/posts/algorithm/Two Sum/)
+	- [3Sum](/posts/algorithm/3Sum/)
+	- [3Sum Closest](/posts/algorithm/3Sum Closest/)

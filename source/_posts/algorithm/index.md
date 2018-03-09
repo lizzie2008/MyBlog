@@ -25,7 +25,7 @@ top: 100
 		- [Two Sum](/posts/algorithm/Two Sum/)
 		- [3Sum](/posts/algorithm/3Sum/)
 		- [3Sum Closest](/posts/algorithm/3Sum Closest/)
-		- 4Sum
+		- [4Sum](/posts/algorithm/4Sum/)
 		- Remove Element
 		- Move Zeroes
 		- Next Permutation

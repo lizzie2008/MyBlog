@@ -80,6 +80,17 @@ deploy:
   type: git
   repo: https://github.com/lizzie2008/lizzie2008.github.io.git
   branch: master
+  
+##deploy:
+##  type: ftpsync
+##  host: 180.76.242.89     
+##  user: administrator            
+##  pass: '@Lizzie08'  
+##  remote: /test  
+##  port:             
+##  ignore:     
+##  connections: 
+##  verbose: true   
 
 # Algolia
 algolia:

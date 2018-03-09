@@ -28,7 +28,7 @@ return [0, 1].
 接着遍历数组元素，如果目标值-当前元素值存在当前的Hashtable中，则表明找到了满足条件的2个元素，返回对应的下标；
 如果Hashtable没有满足的目标值-当前元素值的元素，将当前元素添加到Hashtable，进入下一轮遍历，直到满足上一条的条件。
 
-### 代码实例(C#)
+### 代码示例(C#)
 ```csharp
 public int[] TwoSum(int[] nums, int target)
 {
@@ -54,4 +54,6 @@ public int[] TwoSum(int[] nums, int target)
 - [系列目录索引](/posts/algorithm/index/)
 - [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
 - 相关算法
-
+	- [3Sum](/posts/algorithm/3Sum/)
+	- [3Sum Closest](/posts/algorithm/3Sum Closest/)
+	- [4Sum](/posts/algorithm/4Sum/)	

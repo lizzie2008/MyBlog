@@ -29,7 +29,7 @@ A solution set is:
 **思路**：首先，我们需要对数组进行排序，比如数组排序后变为[-4, -1, -1, 0, 1, 2]，我们判断第一个元素-4，判断它之后是否有2个元素的和等于4，如果有的话满足条件。因为数组已经排序，只要向当前元素之后查找即可，不用往前查找；
 接下来，我们开始遍历排序后的数组，假设当前元素是x，判断本次遍历有解的条件可以转化为找到当前元素之后2个元素和，应该等于0-x，使用夹逼查找方法，检查是否有解，如果有，增加到返回队列，没有的话，进入下一次的遍历，直至找到所有满足条件组合。
 
-### 代码实例(C#)
+### 代码示例(C#)
 ```csharp
 public IList<IList<int>> ThreeSum(int[] nums)
 {
@@ -71,4 +71,6 @@ public IList<IList<int>> ThreeSum(int[] nums)
 - [系列目录索引](/posts/algorithm/index/)
 - [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
 - 相关算法
-
+	- [Two Sum](/posts/algorithm/Two Sum/)
+	- [3Sum Closest](/posts/algorithm/3Sum Closest/)
+	- [4Sum](/posts/algorithm/4Sum/)	
