@@ -243,7 +243,7 @@ post_wordcount:
 # Wechat Subscriber
 wechat_subscriber:
   enabled: true
-  qcode: /uploads/images/wechat-qcode.jpg
+  qcode: https://bj.bcebos.com/v1/mysite/images/profile/qrcode.jpg
   description: 关注我的微信公众号
 
 # Reward
@@ -423,7 +423,7 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-baidushare: 
+# baidushare: 
   type: button
 
 # Share
@@ -449,9 +449,9 @@ baidushare:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
       iconStyle: default
       boxForm: horizontal

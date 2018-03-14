@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-04
 ---
-![avatar](/uploads/images/b4dae30a-2092-401e-b14e-85477d335250.jpg)
+![avatar](https://bj.bcebos.com/v1/mysite/images/articles/b4dae30a-2092-401e-b14e-85477d335250.jpg)
 ### 描述
 >Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.

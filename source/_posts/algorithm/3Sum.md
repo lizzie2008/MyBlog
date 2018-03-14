@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-05
 ---
-![avatar](/uploads/images/76c00dbe-031a-40f9-b1ed-d0083dbfe805.jpg)
+![avatar](https://bj.bcebos.com/v1/mysite/images/articles/76c00dbe-031a-40f9-b1ed-d0083dbfe805.jpg)
 ### 描述
 >Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 Note: The solution set must not contain duplicate triplets.
