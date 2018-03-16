@@ -1,0 +1,56 @@
+﻿---
+title: 算法题丨Move Zeroes
+tags:
+  - 算法
+  - 编程技巧
+  - 数据结构
+categories: 计算机基础
+date: 2017-01-09
+---
+![avatar](https://bj.bcebos.com/v1/mysite/images/articles/1accdf41-135a-477e-b91f-53f911c10fa6.jpg)
+### 描述
+>Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Note:
+1.You must do this in-place without making a copy of the array.
+2.Minimize the total number of operations.
+
+### 示例
+```
+Given nums = [0, 1, 0, 3, 12], after calling your function, 
+nums should be [1, 3, 12, 0, 0].
+```
+<!-- more -->
+### 算法分析
+**难度**：低
+**分析**：给定一个数组，将所有为0的元素都移动到数组的末尾，并保持非0的元素排序保持不变。
+**思路**：首先，思考满足第1个条件很简单，就是遍历数组，判断当前元素是否为0，如果是0，将0跟当前元素互换一下，遍历完数组就可以了。但是这样处理的话，并不能保证非0元素排序不变，所以，我们放弃这种思路。
+那怎么保持非0元素的排序呢？我们考虑记录当前非0的个数索引index，遍历的时候，如果是非0元素，将数组[index]记录该元素，非0的个数索引index加1，下一个非0的就会记录在数组[index+1]中，依次类推，这样其实实现了非0元素顺序保存。最终数组[0,index)即为保持排序的非0元素。剩下的就很简单了，将数组[index]之后的元素全部置0就可以了。
+
+### 代码示例(C#)
+```csharp
+public void MoveZeroes(int[] nums)
+{
+    int index = 0;
+    for (int i = 0; i < nums.Length; ++i)
+    {
+        if (nums[i] != 0)
+        {
+            //非0元素，记录排序
+            nums[index++] = nums[i];
+        }
+    }
+    //非0元素之后的元素全置0
+    for (int i = index; i < nums.Length; ++i)
+    {
+        nums[i] = 0;
+    }
+}          
+```
+### 复杂度
+- **时间复杂度**：*O* (n). 
+- **空间复杂度**：*O* (1).
+
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法：[Remove Element](/posts/algorithm/Remove Element/)

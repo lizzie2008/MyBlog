@@ -54,6 +54,5 @@ public int RemoveDuplicates(int[] nums)
 ### 附录
 - [系列目录索引](/posts/algorithm/index/)
 - [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
-- 相关算法
-	- [Remove Duplicates from Sorted Array II](/posts/algorithm/Remove Duplicates from Sorted Array II/)
+- 相关算法：[Remove Duplicates from Sorted Array II](/posts/algorithm/Remove Duplicates from Sorted Array II/)
 

@@ -63,7 +63,7 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a target="_blank" href="https://github.com/lizzie2008/lizzie2008.github.io">GitHub Pages</a>
+  custom_text: Hosted by <a target="_blank" href="https://pages.coding.me">Coding Pages</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -155,6 +155,7 @@ links:
   张鑫旭-鑫空间-鑫生活: http://www.zhangxinxu.com/
   WEB 骇客: http://www.webhek.com/page/2
   JerryQu 的小站: https://imququ.com/
+  听说: https://tasaid.com/
   
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -187,8 +188,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
@@ -199,7 +200,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false

@@ -1,0 +1,51 @@
+﻿---
+title: 算法题丨Remove Element
+tags:
+  - 算法
+  - 编程技巧
+  - 数据结构
+categories: 计算机基础
+date: 2017-01-08
+---
+![avatar](https://bj.bcebos.com/v1/mysite/images/articles/7a69f3cb-532a-4af6-8112-25684d41480c.jpg)
+### 描述
+>Given an array and a value, remove all instances of that value in-place and return the new length.
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+### 示例
+```
+Given nums = [3,2,2,3], val = 3, Your function should return length = 2, 
+with the first two elements of nums being 2.
+```
+<!-- more -->
+### 算法分析
+**难度**：低
+**分析**：给定数组和指定一个目标值，从数组中移除所有跟目标值相等的元素，返回最终元素的长度，注意不要另外分配内存空间。
+**思路**：题目很简单，直接遍历数组元素，判断当前元素是否跟目标值相等，如果不相等，证明当前元素应该留在数组中，有效数组长度自增1，否则为无效元素，因为只需返回有效数组长度，所以不用删除元素，跳过此循环即可。
+
+### 代码示例(C#)
+```csharp
+public int RemoveElement(int[] nums, int val)
+{
+    int i = 0;
+    for (int j = 0; j < nums.Length; j++)
+    {
+        //如果不相等，有效长度自增1
+        if (nums[j] != val)
+        {
+            nums[i] = nums[j];
+            i++;
+        }
+    }
+    return i;
+}               
+```
+### 复杂度
+- **时间复杂度**：*O* (n). 
+- **空间复杂度**：*O* (1).
+
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)
+- 相关算法：[Move Zeroes](/posts/algorithm/Move Zeroes/)

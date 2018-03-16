@@ -26,9 +26,9 @@ top: 100
 		- [3Sum](/posts/algorithm/3Sum/)
 		- [3Sum Closest](/posts/algorithm/3Sum Closest/)
 		- [4Sum](/posts/algorithm/4Sum/)
-		- Remove Element
-		- Move Zeroes
-		- Next Permutation
+		- [Remove Element](/posts/algorithm/Remove Element/)
+		- [Move Zeroes](/posts/algorithm/Move Zeroes/)
+		- [Next Permutation](/posts/algorithm/Next Permutation/)
 		- Permutation Sequence
 		- Valid Sudoku
 		- Trapping Rain Water
