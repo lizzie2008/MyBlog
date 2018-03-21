@@ -8,7 +8,7 @@ tags:
 categories: 软件工程
 date: 2018-01-05
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/bcb3e1e4-255a-4d30-a44f-a578966056e8.jpg)
 
 ### 摘要
 经过前面几章，我们的网站已经最基本的功能，接下来就是继续拓展其他的功能，这期一起来实现一个该网站流量分析的工具，统计出这个网站每天用户相关数据，不仅要满足了我们对流量统计数字的基本要求，并且用更简单的图形显示方式，让我们一目了然地获取页面热度、点击率信息等等。有了这个想法以后，那怎么实现呢，跟着笔者一步步来吧。

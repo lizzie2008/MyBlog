@@ -7,7 +7,7 @@ tags:
 categories: 软件工程
 date: 2018-01-07
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/e725565f-6bfe-490c-aeea-59b8c880040a.jpg)
 
 ### 摘要
 考虑我们为什么要选择.NET Core？

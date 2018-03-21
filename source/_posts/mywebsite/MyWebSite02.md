@@ -7,7 +7,7 @@ tags:
 categories: 软件工程
 date: 2018-01-02
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/7e924335-4ad3-4382-812a-03ebf5a46d59.jpg)
 
 ### 摘要
 俗话说，磨刀不费砍柴工。为了更方便的进行项目管理，我们先将个人网站项目配置一下，满足以下2个目标：

@@ -6,7 +6,7 @@ tags:
 categories: 软件工程
 date: 2018-01-03
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/97a3305f-789b-4654-a517-ae8e198ced83.jpg)
 
 ### 摘要
 上一章，我们实现了用户的注册和登录，登录之后展示的是我们的主页，页面的左侧是多级的导航菜单，定位并展示用户需要访问的不同页面。目前导航菜单是写死的，考虑以后菜单管理的便捷性，我们这节实现下可视化配置菜单的功能，这样以后我们可以动态的配置导航菜单，不用再编译发布网站程序了。  
