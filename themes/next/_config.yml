@@ -96,6 +96,7 @@ menu:
   categories: /categories/ || th
   tags: /tags/ || tags
   archives: /archives/ || archive
+  专题: /navigation/ || sitemap
   about: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -424,7 +425,7 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-# baidushare: 
+baidushare: 
   type: button
 
 # Share
@@ -450,7 +451,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: true
+  enable: false
   postbottom:
     enable: true
     options:

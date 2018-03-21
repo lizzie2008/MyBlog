@@ -1,8 +1,9 @@
 ﻿---
-title: .NET Core 搭建个人网站 | (2) 一键部署和用户注册登录
+title: .NET Core 搭建个人网站 | (2) 一键部署和用户登录
 tags:
   - .NET Core
   - Entity Framework
+  - Indentity
 categories: 软件工程
 date: 2018-01-02
 ---

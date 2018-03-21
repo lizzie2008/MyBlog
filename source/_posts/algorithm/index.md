@@ -5,8 +5,9 @@ tags:
   - 编程技巧
   - 数据结构
 categories: 计算机基础
-date: 2018-01-01
+date: 2018-02-01
 top: 100
+headtxt: 系列
 ---
 ![avatar](https://bj.bcebos.com/v1/mysite/images/articles/fd2b4ddb-83a0-46bd-b08e-25acc4872168.jpg)
 ### 介绍
