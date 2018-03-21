@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-02
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/e4ec8743-c64c-4c29-8381-85f8acd01b8c.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/e4ec8743-c64c-4c29-8381-85f8acd01b8c.jpg)
 ### 描述
 >Follow up for "[Remove Duplicates](/posts/algorithm/RemoveDuplicates/)":
 What if duplicates are allowed at most twice?

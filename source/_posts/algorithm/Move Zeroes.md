@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-09
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/1accdf41-135a-477e-b91f-53f911c10fa6.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/1accdf41-135a-477e-b91f-53f911c10fa6.jpg)
 ### 描述
 >Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 Note:

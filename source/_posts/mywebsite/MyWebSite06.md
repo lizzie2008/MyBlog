@@ -9,7 +9,7 @@ tags:
 categories: 软件工程
 date: 2018-01-06
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
 
 ### 摘要
 HI，有段时间没有更新了，主要因为第一年前事情比较多，有些事得忙着张罗下；第二呢，对个人网站进行了一次大范围的优化，主要是申请的云服务器资源有限，1m的网络带宽，带上图片展示的话，打开网站的平均速度会达到20s以上，用户的体验不是很好；经过这次优化，已将访问速度控制在1s左右，整体感觉速度和用户体验提升了不少。当然，最主要的是，把网站的模式改成了单页应用模式，算得上是比较大的重构了，所以耽搁的时间比较久，请大家见谅。
@@ -34,7 +34,7 @@ HI，有段时间没有更新了，主要因为第一年前事情比较多，有
 
 ### 引入UI路由框架
 既然我们舍弃了多页模式，就不能再用微软提供的_layout模板页取渲染视图了，很方便的Razor引擎也没法再用了（这里稍微解释下，.Net Core之前版本的，是可以继续用Razor来渲染数据模型的，但是.Net Core中，会将cshtml文件一起编译成dll文件，所以cshtml文件在发布路径中是找不到的，所以路由后的url是找不到的），那选用那种UI框架，来满足单页模式应用呢？
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129114442890-1447557048.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129114442890-1447557048.png)
 我们理一下思路：如图，我们通过导航栏side的url地址，通过一种路由方式找到对应的html文件，然后后台加载数据，通过UI渲染，在内容区域content中显示。这里可以看出，主要要满足一是url的路由，二是数据模型的渲染。当然，满足这样需求的UI框架很多，我这里用的一种主流框架angular-ui-router(url路由，可以支持多样化视图和嵌入式视图)+angular（数据模型和UI界面双向绑定），大家也可以用别的方式，条条大道通罗马嘛！
 
 #### angular-ui-router配置
@@ -286,7 +286,7 @@ app.controller('MenuManagementController', ['$scope', function ($scope) {
 ```
 简单说下大体的加载流程：用户点击左侧导航菜单-->angular-ui-router会根据咱们site.js中的路由配置，找到对应的MenuManagement.html页面进行局部刷新-->根据视图中的控制器MenuManagementController，执行对应控制器中的逻辑并返回数据，由angularjs绑定到视图-->内容区域获取到绑定后的视图，在内容区域显示。
 最终菜单管理页面效果：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129144020406-2048683542.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129144020406-2048683542.png)
 
 ### 网站性能优化
 我们已经将网站改造成单页应用，用户体验已经有了很大的提高，但是还是有许多值得优化的地方。由于云服务器提供的带宽非常有限，有时资源和图片下载稍微有点慢的情况，会导致整个体验会非常不好。当然，优化网站的手段非常多，实际情况往往比较复杂，那针对本人的网站，这里列出我自己此次实际过程中采取的优化方法，跟大家分享下。
@@ -327,12 +327,12 @@ app.controller('MenuManagementController', ['$scope', function ($scope) {
 <link rel="stylesheet" href="https://fonts.cat.net/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" />
 ```
 引入后，我们监测下网络传输，可以看到，现在访问这些资源直接从CDN服务器中去取，大大提高了访问速度：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129145513109-1859896302.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129145513109-1859896302.png)
  
 #### 使用对象存储服务
 网站难免包含一些图片或稍微大一点的资源，几十kb到几M。没有缓存情况下，访问这些资源，我那可怜的带宽基本就占用差不多了，打开这种界面，经常就卡死或超时很严重。其实国内外很多云服务器服务商已经提供了这种解决方案，比如云存储服务。您可以将任意数量和形式的非结构化数据存入对象存储服务，并对数据进行管理和处理，满足各类场景的存储需求。
 我们将图片存储到申请的对象存储服务中，这样我们访问网站图片的时候，就可以直接访问云存储服务器。再来看下访问速度，可以明显看出，现在图片下载速度控制在几百ms内，比之前几秒甚至十几秒才能下载一张图片，有了很大的性能提高。
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129155620265-1174147050.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129155620265-1174147050.png)
 
 #### 图片延迟加载
 相对来说，一般图片算是比较大的文件，往往网页传输过程中，占了很大的带宽，如果一个页面图片比较多，出现图片集中加载的时候，网站整体感觉加载偏慢。
@@ -343,7 +343,7 @@ app.controller('MenuManagementController', ['$scope', function ($scope) {
 #### 合并压缩资源
 为了合理的管理自己的代码，我们可以将css和js文件打包并压缩，这样我们可以将所有的css或js压缩成1个文件，文件体积也比原先小很多。
 .Net Core已经提供了合并和压缩资源的工具，我们在程序包管理控制台，安装BundlerMinifier工具：`Install-Package BundlerMinifier.Core -Version 2.6.362`
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129163856765-1522063145.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129163856765-1522063145.png)
 安装完成后，我们配置根目录下的bundleconfig.json，关于BundlerMinifier的使用方法和配置说明，参考<a href="https://docs.microsoft.com/en-us/aspnet/core/client-side/bundling-and-minification?tabs=visual-studio%2Caspnetcore2x" target="_blank">官方文档</a>：
 ```bash
 [
@@ -374,7 +374,7 @@ app.controller('MenuManagementController', ['$scope', function ($scope) {
 ]
 ```
 编译代码，可以看到会自动将配置的所有css和js打包：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129164200765-1881841796.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129164200765-1881841796.png)
 这里注意一个小细节，angular依赖注入的js文件，必须严格按照标准格式来写，否则的话，打包后会执行报错。
 我们可以设置在开发环境下，用原始的css/js资源，方便调试，发布时用打包后的资源
 ```html
@@ -394,8 +394,8 @@ app.controller('MenuManagementController', ['$scope', function ($scope) {
 </environment>
 ```
 我们再监测下网站传输，可以看到，打包后的文件大小，较之前压缩了很多，很大提高了传输效率。
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129162706546-1336026234.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129162706546-1336026234.png)
 
 ### 总结
 我们最后看下优化后的效果，主页在没有缓存情况下，2s内就完成了加载，实际用户体验良好。 我们的单页模式改造和性能优化，顺利完成！
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20180129160113343-1945808807.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20180129160113343-1945808807.png)

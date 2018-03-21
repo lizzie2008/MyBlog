@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-11
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/d21ee518-d67e-4a61-9a7f-cdd43df6bf89.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/d21ee518-d67e-4a61-9a7f-cdd43df6bf89.jpg)
 ### 描述
 >The set [1,2,3,…,n] contains a total of n! unique permutations.
 

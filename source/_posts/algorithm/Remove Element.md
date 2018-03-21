@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-08
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/7a69f3cb-532a-4af6-8112-25684d41480c.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/7a69f3cb-532a-4af6-8112-25684d41480c.jpg)
 ### 描述
 >Given an array and a value, remove all instances of that value in-place and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.

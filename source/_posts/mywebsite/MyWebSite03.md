@@ -6,7 +6,7 @@ tags:
 categories: 软件工程
 date: 2018-01-03
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
 
 ### 摘要
 上一章，我们实现了用户的注册和登录，登录之后展示的是我们的主页，页面的左侧是多级的导航菜单，定位并展示用户需要访问的不同页面。目前导航菜单是写死的，考虑以后菜单管理的便捷性，我们这节实现下可视化配置菜单的功能，这样以后我们可以动态的配置导航菜单，不用再编译发布网站程序了。  
@@ -14,7 +14,7 @@ date: 2018-01-03
 
 ### 增加后台管理模块
 第1步，左侧导航菜单中，添加后台管理模块，用作管理员登录后，可以进行一些后台管理的操作，当然，目前还没有权限控制（后期加入），所以对所有用户可见。大概菜单结构如下：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228105813566-843439505.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228105813566-843439505.png)
 有了菜单项，我们还需要控制视图的跳转，所以，接下来需要写对应的控制器和视图。
 为了将相关功能组织成一组单独命名空间（路由）和文件夹结构（视图），解决方案中右键添加区域（Area）,取名后台管理（Configuration），代表后台管理模块，.Net Core脚手架（scaffold）自动帮我们实现了目录划分：控制器（Controllers）、模型（Models）、视图（Views）
 
@@ -349,7 +349,7 @@ public async Task<IActionResult> Index(MenuIndexQuery query)
     </script>
 }
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228141832616-1124577518.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228141832616-1124577518.png)
 
 #### 新建页改写
 控制器调整：这里控制器有2个Create方法，一个是Http Get类型，用户列表页点新建时，跳转到该方法，另外一个是Http Post类型，用户填完新建的菜单信息后，点击保存，跳转到该方法。在Http Post方法中，为了防止页面over post，需要指定绑定的属性Bind ("Id, Name, ParentId, IndexCode, Url, MenuType, Icon, Remarks")，当然，也可以用TryUpdateModel()实现，以后再介绍；
@@ -489,7 +489,7 @@ public async Task<IActionResult> Create([Bind("Id,Name,ParentId,IndexCode,Url,Me
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228143555022-1598498622.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228143555022-1598498622.png)
 
 #### 详情页改写
 控制器调整：不用大的调整，只是增加了下拉框的初始化工作 ；
@@ -594,7 +594,7 @@ public async Task<IActionResult> Details(string id)
     </div>
 </section>
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228150423834-586017278.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228150423834-586017278.png)
 
 #### 编辑页面改写
 控制器调整：也是有Http Get和Http Post方法，分别是开始编辑和编辑保存跳转的方法，同时加上防止over post字段绑定；
@@ -754,7 +754,7 @@ public async Task<IActionResult> Edit(string id, [Bind("Id,Name,ParentId,IndexCo
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228150504788-1173707728.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228150504788-1173707728.png)
 以上，我们可以通过增删改查界面操作菜单项了，但是要怎么将数据库中的菜单跟左侧的导航菜单关联呢？下节，我们将实现下这个功能。
 
 ### 动态加载导航菜单
@@ -957,7 +957,7 @@ public class NavMenuService : INavMenuService
 
 ### 导航菜单刷新优化
 现在我们的导航菜单的展示功能基本完成了，但是这里有个小小的用户体验的问题，就是每次点击导航菜单项时，由于页面跳转，导致整个Layout页面会刷新，那左侧的导航菜单也会刷新，这样之前展开的菜单就会折叠起来：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228161317350-290079642.gif)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228161317350-290079642.gif)
 要保持原有的菜单不被折叠，有很多方法，比如不使用Layout，点击导航菜单项时，通过Ajax局部刷新右侧内容区域，或者直接做成单页模式的网站，保证左侧的导航菜单不因不同内容而刷新。这里考虑.Net Core使用Layout的便捷性，思路如下：点击导航菜单项时，保存展开的菜单项id到cookie中，跳转下一个界面以后，根据cookie中的菜单项id，重新设置展开状态
 ```javascript
 $('.main-sidebar a').click(function () {
@@ -971,9 +971,9 @@ $('.main-sidebar a').click(function () {
     $.cookie('menuids_open', menuids.join(','), { path: "/" })
 })
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228161505491-733929899.gif)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228161505491-733929899.gif)
 实现后效果：点击菜单后，不再折叠。
 
 ### 小结
 至此，我们第一个后台管理功能--菜单管理已经完成，我们来看下效果：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171228163753538-1491482338.gif)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171228163753538-1491482338.gif)

@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-07
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/86f0a3c8-88b2-44bb-9d80-45252c26b617.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/86f0a3c8-88b2-44bb-9d80-45252c26b617.jpg)
 ### 描述
 >Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? 
 Find all unique quadruplets in the array which gives the sum of target.

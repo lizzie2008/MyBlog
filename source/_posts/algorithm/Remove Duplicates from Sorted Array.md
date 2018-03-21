@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-01
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/450f7e84-27ba-4178-8de0-a890e41cb713.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/450f7e84-27ba-4178-8de0-a890e41cb713.jpg)
 ### 描述
 >Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.

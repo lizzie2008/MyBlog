@@ -7,7 +7,7 @@ tags:
 categories: 计算机基础
 date: 2017-01-10
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/e46fea39-144a-47f4-abb6-ca7c7324f04d.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/e46fea39-144a-47f4-abb6-ca7c7324f04d.jpg)
 ### 描述
 >Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
@@ -62,7 +62,7 @@ c）将i与j交换。
 d）逆置[j,end)
 由于此时[j,end)是降序的，故将其逆置。最终获得下一全排序。
 注意：如果在步骤a）找不到符合的相邻元素对，即此时i=begin，则说明当前[begin,end)为一个降序顺序，即无下一个全排列，于是将其逆置成升序。
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/e7855a48-6c57-482c-80b8-c6e81a49f161.gif)
+![avatar](https://mysite.bj.bcebos.com/images/201803/e7855a48-6c57-482c-80b8-c6e81a49f161.gif)
 
 ### 代码示例(C#)
 ```csharp

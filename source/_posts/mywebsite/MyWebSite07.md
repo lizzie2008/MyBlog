@@ -7,7 +7,7 @@ tags:
 categories: 软件工程
 date: 2018-01-07
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
 
 ### 摘要
 考虑我们为什么要选择.NET Core？
@@ -34,7 +34,7 @@ date: 2018-01-07
 ```
 fdisk -l
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/e49d7a32-fcab-4c16-a0ed-540ec46505c7.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/e49d7a32-fcab-4c16-a0ed-540ec46505c7.png)
 发现我们的第二块磁盘云磁盘(/dev/vdb)并没有被加载。
 在挂载之前，首先要格式化这块硬盘。我们选择的是ext4格式：
 ```
@@ -49,10 +49,10 @@ mount /dev/vdb /data
 ```
 df -h
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/4679e780-9e7a-4b01-b2f2-9b42552b73b2.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/4679e780-9e7a-4b01-b2f2-9b42552b73b2.png)
 可以看到，云磁盘可以正常的被挂载了。但是如果重启系统的话，磁盘仍旧会丢失，我们还必须在每次启动的时候将磁盘挂载。
 修改/etc/fstab文件，需要在该文件的最后添加一行，具体如下：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/fcc47447-b411-440f-9e75-d5f889ba965a.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/fcc47447-b411-440f-9e75-d5f889ba965a.png)
 至此，我们重启系统，发现磁盘可以正常挂载使用了。
 
 ### 安装 .NET Core
@@ -91,7 +91,7 @@ service mysqld start
 service mysqld status
 systemctl enable mysqld
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/5efce521-9f8f-49a3-bc1b-c10c0ebe21bd.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/5efce521-9f8f-49a3-bc1b-c10c0ebe21bd.png)
 mysql安装完成之后，在/var/log/mysqld.log文件中给root生成了一个默认密码。通过下面的方式找到root默认密码：
 ```
 grep 'temporary password' /var/log/mysqld.log
@@ -124,7 +124,7 @@ services.AddDbContext<ApplicationDbContext>(options =>
 ```
 dotnet MyWebSite.dll
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/ffadaab9-1b22-4b0b-9807-c42f28d19323.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/ffadaab9-1b22-4b0b-9807-c42f28d19323.png)
 现在我们的项目就正常的部署并运行在localhost:5000上了。
 
 ### 安装 Nginx
@@ -184,7 +184,7 @@ stopsignal=INT
 supervisord -c /etc/supervisor/supervisord.conf
 ps -ef | grep MyWebSite
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/c5521dfb-85a6-4553-b8cd-10b5f460f92d.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/c5521dfb-85a6-4553-b8cd-10b5f460f92d.png)
 最后，我们要配置Supervisor开机启动，新建一个“/usr/lib/systemd/system/supervisord.service”文件
 ```
 # dservice for systemd (CentOS 7.0+)
@@ -206,7 +206,7 @@ WantedBy=multi-user.target
 ```
 systemctl enable supervisord
 ```
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/efcc43dc-6fb6-4d1d-b803-6aa8fc22fe27.png)
+![avatar](https://mysite.bj.bcebos.com/images/201803/efcc43dc-6fb6-4d1d-b803-6aa8fc22fe27.png)
 
 ### 开启防火墙
 CentOS中防火墙程序主要是firewall和iptables，CentOS7中firewall服务已经默认安装好了。所以，这里介绍一下firewall相关配置。
@@ -251,7 +251,7 @@ chmod -R 777 *
 passwd ftpuser
 ```
 VS2017中，修改ftp部署配置如下图：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/20180315163612.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/201803/20180315163612.jpg)
 
 ### 配置 https 协议
 为了实现数据信息在客户端和服务器之间的加密传输，防止数据信息的泄露，保证双方传递信息的安全性，我们需要HTTP下加入SSL层，我之前已经申请过Symantec免费的SSL证书，所以就简单说明一下怎么配置。
@@ -279,6 +279,6 @@ ssl_prefer_server_ciphers  on;
 include /etc/nginx/default.d/*.conf;
 ```
 最后，我们重启一下Nginx，输入我们的网站地址：<a href="https://www.lancel0t.cn/" target="_blank">https://www.lancel0t.cn/</a> ，看到能够正常访问。
-![avatar](https://bj.bcebos.com/v1/mysite/images/201803/20180315112534.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/201803/20180315112534.jpg)
 
 至此，网站应用程序移植到Linux环境中完美完成！当然，实施的过程中笔者也踩过不少的坑，这里希望能抛砖引玉，有什么问题欢迎给我博客留言，一起讨论。

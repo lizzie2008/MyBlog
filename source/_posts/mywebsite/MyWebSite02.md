@@ -7,7 +7,7 @@ tags:
 categories: 软件工程
 date: 2018-01-02
 ---
-![avatar](https://bj.bcebos.com/v1/mysite/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
 
 ### 摘要
 俗话说，磨刀不费砍柴工。为了更方便的进行项目管理，我们先将个人网站项目配置一下，满足以下2个目标：
@@ -19,27 +19,27 @@ date: 2018-01-02
 
 ### VS2017支持Github
 选择 工具-->扩展和更新，搜索GitHub，安装GitHub的VS插件
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207153111550-745349484.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207153111550-745349484.png)
 安装完插件，打开视图-->团队资源管理器，我们可以看到Git插件菜单。通过菜单我们可以新建Git存储库，可以提交修改的代码，并一键同步提交后的代码到自己的GitHub项目中。
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207153527613-252782156.png)![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207153615191-386595220.png)      
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207153527613-252782156.png)![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207153615191-386595220.png)      
 再打开GitHub，可以看我们的代码已经同步了，是不是很方便？
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207153726347-1757772626.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207153726347-1757772626.png)
 
 ### VS2017支持FTP远程发布
 要VS支持FTP发布，首先要将网站服务器配置成FTP服务器。
 Server2008添加新的角色，选中文件服务并安装新角色：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207154205925-1599825668.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207154205925-1599825668.png)
 再次选中已安装的IIS服务，增加FTP服务器相关的角色：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207154335566-667721509.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207154335566-667721509.png)
 接着，在IIS网站右键选择“添加FTP站点”，选择FTP文件物理路径和添加站点名称：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207154623847-2011046128.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207154623847-2011046128.png)
 端口默认21，不用选择SSL证书，身份验证这里选择基本验证（为了一定的安全性，不要勾选匿名），授权访问里，指定administrator才能访问FTP站点，并具有读取和写入的权限；
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207154750941-397237430.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207154750941-397237430.png)
 完成后，我们建好的FTP就自动启动了，这时浏览器中输入ftp://localhost ，输入用户名和密码，就可以访问对应的文件目录了。当然，我们外网还是无法访问，为什么呢？相信大家看过上一篇，应该知道是防火墙的原因，我们按照上一篇的配置，增加FTP 21端口的允许入站规则，这样我们外网就通过FTP访问网站发布目录。
 配置完外网服务器，我们来配置一下本地VS2017，右键项目-->发布，选择FTP发布，选项配置如下：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207160235847-1301216090.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207160235847-1301216090.png)
 这样我们就已经配置好本地一键发布站点到远程服务器了。以后直接点发布按钮，就可以看到自动将生成的发布文件，同步到网站服务器：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207160450972-1598824494.png)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207160450972-1598824494.png)
 
 ### 替换前端框架
 准备工作做完，浏览器输入网站服务器IP，可以看到可以正常访问，但是.net core mvc帮我们自动生成的界面，不一定符合我们的需求，那还是自己找一个前端的UI框架，替换一下既有界面。这里我选择的是 AdminLTE ,这是一个基于 bootstrap 的轻量级后台模板，相关的资料大家可以去官网研究一下。
@@ -336,4 +336,4 @@ public void ConfigureServices(IServiceCollection services)
 </html>
 ```
 这样，我们登录和注册功能大体完成了，我们看下效果：
-![avatar](https://bj.bcebos.com/v1/mysite/images/201801/371995-20171207164558613-789033155.gif)
+![avatar](https://mysite.bj.bcebos.com/images/201801/371995-20171207164558613-789033155.gif)

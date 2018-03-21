@@ -245,7 +245,7 @@ post_wordcount:
 # Wechat Subscriber
 wechat_subscriber:
   enabled: true
-  qcode: https://bj.bcebos.com/v1/mysite/images/profile/qrcode.jpg
+  qcode: https://mysite.bj.bcebos.com/images/profile/qrcode.jpg
   description: 关注我的微信公众号
 
 # Reward
