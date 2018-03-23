@@ -35,6 +35,6 @@ date: 2017-01-01
 - [算法题丨Move Zeroes](/posts/algorithm/Move Zeroes/)
 - [算法题丨Next Permutation](/posts/algorithm/Next Permutation/)
 - [算法题丨Permutation Sequence](/posts/algorithm/Permutation Sequence/)
-
+- [算法题丨Valid Sudoku](/posts/algorithm/Valid Sudoku/)
 
 

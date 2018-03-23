@@ -1,0 +1,61 @@
+﻿---
+title: 算法题丨Valid Sudoku
+tags:
+  - 算法
+  - 编程技巧
+  - 数据结构
+categories: 计算机基础
+date: 2017-01-12
+---
+![avatar](https://mysite.bj.bcebos.com/images/articles/d21ee518-d67e-4a61-9a7f-cdd43df6bf89.jpg)
+
+### 描述
+>Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
+The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
+A partially filled sudoku which is valid.
+![avatar](https://mysite.bj.bcebos.com/images/201803/250px-Sudoku-by-L2G-20050714.svg.png)
+A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
+<!-- more -->
+
+### 算法分析
+**难度**：中
+**分析**：首先得知道什么是Sudoku（数独），数独是源自18世纪瑞士的一种数学游戏。是一种运用纸、笔进行演算的逻辑游戏。玩家需要根据9×9盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫（3*3）内的数字均含1-9，不重复。如上图的数独，可以用字符型二维数组表示（空白处用'.'）,算法要求判断该二维数组表示的数独，是否有效。
+**思路**：我们已知要判断数独数组的有效性，即判断1-9数字在每行、每列、所有九宫格中不重复。于是，可以考虑构建3个HashSet，分别表示行、列、九宫格中元素集合，通过HashSet.Add方法，如果元素重复，则返回失败。
+
+### 代码示例(C#)
+```csharp
+public bool IsValidSudoku(char[][] board)
+{
+    for (int i = 0; i < 9; i++)
+    {
+        HashSet<char> rows = new HashSet<char>();
+        HashSet<char> columns = new HashSet<char>();
+        HashSet<char> cube = new HashSet<char>();
+
+        for (int j = 0; j < 9; j++)
+        {
+            //行不能有重复元素
+            if (board[i][j] != '.' && !rows.Add(board[i][j]))
+                return false;
+            //列不能有重复元素
+            if (board[j][i] != '.' && !columns.Add(board[j][i]))
+                return false;
+            //验证九宫格里不能有重复元素
+            int RowIndex = 3 * (i / 3);
+            int ColIndex = 3 * (i % 3);
+            if (board[RowIndex + j / 3][ColIndex + j % 3] != '.' 
+                && !cube.Add(board[RowIndex + j / 3][ColIndex + j % 3]))
+                return false;
+        }
+    }
+    return true;
+}
+```
+
+### 复杂度
+- **时间复杂度**：*O* (n²). 
+- **空间复杂度**：*O* (1).
+
+### 附录
+- [系列目录索引](/posts/algorithm/index/)
+- [代码实现(C#版)](https://github.com/lizzie2008/LeetCode.git)

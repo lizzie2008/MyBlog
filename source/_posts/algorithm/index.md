@@ -32,7 +32,7 @@ headtxt: 系列
 		- [Move Zeroes](/posts/algorithm/Move Zeroes/)
 		- [Next Permutation](/posts/algorithm/Next Permutation/)
 		- [Permutation Sequence](/posts/algorithm/Permutation Sequence/)
-		- Valid Sudoku
+		- [Valid Sudoku](/posts/algorithm/Valid Sudoku/)
 		- Trapping Rain Water
 		- Rotate Image
 		- Plus One
