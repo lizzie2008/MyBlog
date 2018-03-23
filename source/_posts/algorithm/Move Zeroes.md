@@ -8,6 +8,7 @@ categories: 计算机基础
 date: 2017-01-09
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/1accdf41-135a-477e-b91f-53f911c10fa6.jpg)
+
 ### 描述
 >Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 Note:
@@ -20,6 +21,7 @@ Given nums = [0, 1, 0, 3, 12], after calling your function,
 nums should be [1, 3, 12, 0, 0].
 ```
 <!-- more -->
+
 ### 算法分析
 **难度**：低
 **分析**：给定一个数组，将所有为0的元素都移动到数组的末尾，并保持非0的元素排序保持不变。
@@ -46,6 +48,7 @@ public void MoveZeroes(int[] nums)
     }
 }          
 ```
+
 ### 复杂度
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (1).

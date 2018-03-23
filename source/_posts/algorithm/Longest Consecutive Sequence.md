@@ -16,8 +16,9 @@ Your algorithm should run in O(n) complexity.
  ```
 Given [100, 4, 200, 1, 3, 2],
 The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
- ```
+```
 <!-- more -->
+
 ### 算法分析
 **难度**：高
 **分析**：给定未排序的整型数组，找到数值连续的元素，并返回连续元素的最大长度。
@@ -61,7 +62,8 @@ public int LongestConsecutive(int[] nums)
 
     return longestStreak;
 }                                          
- ```
+```
+
 ### 复杂度
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (n).

@@ -93,6 +93,7 @@ public enum MenuTypes
 }
 ```
 有了我们的菜单模型，在控制器目录中，我们右键建立第1个自己的控制器，取名MenuController，用来菜单管理，上下文选取定义好的Menu模型，还是利用脚手架，自动帮我们生成增删改查对应的后来逻辑和视图。此时，我们把菜单导向该控制器，其实是可以正常访问的，不过还远远达不到我们的要求，所以我们还得完善下自动生成的代码。
+
 #### 菜单控制器改写
 为了方便今后的拓展，新增一个AppController控制器，继承Controller，以后所有的控制器，都继承于AppController，方便一些公共的方法调用。
 .Net Core有个比较方便的一点，就是实现了构造器的依赖注入，这样我们不用像以前那样手工New一个DBContext对象，直接在控制器将需要的DBContext注入，调用的时候，直接访问注入的对象即可，有关依赖注入的知识，这里就不在多说了，有兴趣大家可以了解一下：.Net Core依赖注入
@@ -156,6 +157,7 @@ private void UpdateDropDownList(Menu menu = null)
     }
 }
 ```
+
 #### 列表页改写
 控制器调整：增加查询传入参数，根据参数筛选查询结果；
 ```csharp
@@ -903,7 +905,7 @@ public class NavMenuService : INavMenuService
 }
 ```
 最后，我们渲染下整个导航视图，我们已经有了NavMenuService服务，那怎么在UI界面去访问和使用它呢？其实.Net Core里提供了很方便的机制去访问，直接在Razor视图里将服务注册就行了，如：@inject INavMenuService NavMenuServiceIns
-```csharp
+```html
 @using Microsoft.AspNetCore.Http
 @using MyWebSite.Areas.Configuration.ViewModels
 @using MyWebSite.Services.Interfaces

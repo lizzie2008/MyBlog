@@ -8,6 +8,7 @@ categories: 计算机基础
 date: 2017-01-10
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/e46fea39-144a-47f4-abb6-ca7c7324f04d.jpg)
+
 ### 描述
 >Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
@@ -22,6 +23,7 @@ and its corresponding outputs are in the right-hand column.
 1,1,5 → 1,5,1
 ```
 <!-- more -->
+
 ### 算法分析
 **难度**：中
 **分析**：这里需要跟大家介绍一下相关的几个概念：
@@ -109,6 +111,7 @@ private void Swap(int[] nums, int i, int j)
     nums[j] = temp;
 } 
 ```
+
 ### 复杂度
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (1).

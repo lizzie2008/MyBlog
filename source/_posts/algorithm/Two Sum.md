@@ -8,18 +8,20 @@ categories: 计算机基础
 date: 2017-01-04
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/b4dae30a-2092-401e-b14e-85477d335250.jpg)
+
 ### 描述
 >Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 ### 示例
- ```
+```
 Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
- ```
+```
 <!-- more -->
+
 ### 算法分析
 **难度**：低
 **分析**：要求给定的数组，查找其中2个元素，满足这2个元素的相加等于给定目标target的值。
@@ -45,7 +47,8 @@ public int[] TwoSum(int[] nums, int target)
     }
     return null;
 }                                      
- ```
+```
+
 ### 复杂度
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (1).

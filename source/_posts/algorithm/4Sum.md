@@ -8,6 +8,7 @@ categories: 计算机基础
 date: 2017-01-07
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/86f0a3c8-88b2-44bb-9d80-45252c26b617.jpg)
+
 ### 描述
 >Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? 
 Find all unique quadruplets in the array which gives the sum of target.
@@ -25,6 +26,7 @@ A solution set is:
 ]
 ```
 <!-- more -->
+
 ### 算法分析
 **难度**：中
 **分析**：给定整型数组和指定一个整型目标值，从整形数组中找出4个不同的元素，使得4个元素之和等于目标值，返回结果为所有满足上述条件的元素组合。
@@ -81,6 +83,7 @@ public IList<IList<int>> FourSum(int[] nums, int target)
     return res;
 }                               
 ```
+
 ### 复杂度
 - **时间复杂度**：*O* (n³). 
 - **空间复杂度**：*O* (1).

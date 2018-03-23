@@ -8,12 +8,13 @@ categories: 计算机基础
 date: 2017-01-05
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/76c00dbe-031a-40f9-b1ed-d0083dbfe805.jpg)
+
 ### 描述
 >Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 Note: The solution set must not contain duplicate triplets.
 
 ### 示例
- ```
+```
 Given array S = [-1, 0, 1, 2, -1, -4],
 
 A solution set is:
@@ -21,8 +22,9 @@ A solution set is:
   [-1, 0, 1],
   [-1, -1, 2]
 ]
- ```
+```
 <!-- more -->
+
 ### 算法分析
 **难度**：中
 **分析**：要求给定的数组，找出满足条件的3个元素组合，使得3个元素之和等于零。注意，元素不能重复(值可以相同)。
@@ -62,7 +64,8 @@ public IList<IList<int>> ThreeSum(int[] nums)
     }
     return res;
 }                                  
- ```
+```
+
 ### 复杂度
 - **时间复杂度**：*O* (n²). 
 - **空间复杂度**：*O* (1).

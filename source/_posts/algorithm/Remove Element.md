@@ -8,6 +8,7 @@ categories: 计算机基础
 date: 2017-01-08
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/7a69f3cb-532a-4af6-8112-25684d41480c.jpg)
+
 ### 描述
 >Given an array and a value, remove all instances of that value in-place and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
@@ -19,6 +20,7 @@ Given nums = [3,2,2,3], val = 3, Your function should return length = 2,
 with the first two elements of nums being 2.
 ```
 <!-- more -->
+
 ### 算法分析
 **难度**：低
 **分析**：给定数组和指定一个目标值，从数组中移除所有跟目标值相等的元素，返回最终元素的长度，注意不要另外分配内存空间。
@@ -41,6 +43,7 @@ public int RemoveElement(int[] nums, int val)
     return i;
 }               
 ```
+
 ### 复杂度
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (1).

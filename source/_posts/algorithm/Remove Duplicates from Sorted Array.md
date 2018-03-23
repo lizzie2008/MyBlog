@@ -8,19 +8,21 @@ categories: 计算机基础
 date: 2017-01-01
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/450f7e84-27ba-4178-8de0-a890e41cb713.jpg)
+
 ### 描述
 >Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
 ### 示例
- ```
+```
 Given nums = [1,1,2],
 	
 Your function should return length = 2, with the first two elements of nums being 
 1 and 2 respectively.
 It doesn't matter what you leave beyond the new length.
- ```
+```
 <!-- more -->
+
 ### 算法分析
 **难度**：低
 **分析**：要求给定的排序后的数组，将其中重复的元素去除（是的每个元素只出现一次），并返回最终数组的长度。算法不要分配额外的数组空间。
@@ -46,7 +48,8 @@ public int RemoveDuplicates(int[] nums)
     }
     return i + 1;
 }                                           
- ```
+```
+
 ### 复杂度
 - **时间复杂度**：*O* (n). 
 - **空间复杂度**：*O* (1).

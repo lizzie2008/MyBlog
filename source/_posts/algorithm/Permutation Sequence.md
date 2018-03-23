@@ -8,6 +8,7 @@ categories: 计算机基础
 date: 2017-01-11
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/d21ee518-d67e-4a61-9a7f-cdd43df6bf89.jpg)
+
 ### 描述
 >The set [1,2,3,…,n] contains a total of n! unique permutations.
 
@@ -27,6 +28,7 @@ Given n and k, return the kth permutation sequence.
 Note: Given n will be between 1 and 9 inclusive.
 ```
 <!-- more -->
+
 ### 算法分析
 **难度**：中
 **分析**：前面章节我们解释了全排列的概念，这节算法要求给定的{1,2...n}集合，求集合的全排列中第k条排列。
@@ -74,6 +76,7 @@ public string GetPermutation(int n, int k)
     return sb.ToString();
 }
 ```
+
 ### 复杂度
 - **时间复杂度**：*O* (n²). 
 - **空间复杂度**：*O* (1).

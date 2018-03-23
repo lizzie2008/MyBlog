@@ -10,6 +10,7 @@ top: 100
 headtxt: 系列
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/fd2b4ddb-83a0-46bd-b08e-25acc4872168.jpg)
+
 ### 介绍
 &emsp;&emsp;本系列的受众目标是对算法有兴趣的、愿意和我一起进步、学习和提高的同学，要求有一定的数据结构基础，链表、排序、二叉树等等一些基本知识，可能需要一些基础的数学知识。如果这方面有所欠缺或不懂的，请自行找相关资料看一下，笔者就不再累述了。
 &emsp;&emsp;文章旨在帮助大家学习和整理算法，分门别类的总结相关知识点和平台上对应的算法题。每题都有完整的示例代码，都是综合整理各位大牛的代码，精炼出尽可能简短的，并且每段代码笔者也测试验证过，保证正确有效，可以参考文末资料中的代码，下载并调试。
@@ -188,9 +189,6 @@ headtxt: 系列
 	- Generate Parentheses
 	- Sudoku Solver
 	- Word Search
-
-
-
 
 ### 相关资料
 - [LeetCode](https://leetcode.com/problemset/all/)

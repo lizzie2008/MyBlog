@@ -180,6 +180,7 @@ Server2008添加新的角色，选中文件服务并安装新角色：
 @await Html.PartialAsync("_ValidationScriptsPartial")
 ```
 这里的知识很简单，就不在祥述了，不过因为用的是.net core提供的identity用户管理和验证，有些个人遇到的问题，我还是列出来，以免再走弯路。
+
 #### 自定义的服务器端和客户单的验证
 比如，新用户注册时，要保证用户已勾选“阅读并接受用户协议”。而MVC本身校验机制没有提供bool型必须为true的校验，这里我们自己实现一个服务器端属性的校验，需要继承ValidationAttribute和IClientModelValidator：
 ```csharp
