@@ -21,20 +21,20 @@ headtxt: 系列
 ### 文章目录
 - Linear List
 	- Array
-		- [Remove Duplicates from Sorted Array](/posts/algorithm/Remove Duplicates from Sorted Array/)
-		- [Remove Duplicates from Sorted Array II](/posts/algorithm/Remove Duplicates from Sorted Array II/)
-		- [Longest Consecutive Sequence](/posts/algorithm/Longest Consecutive Sequence/)
-		- [Two Sum](/posts/algorithm/Two Sum/)
-		- [3Sum](/posts/algorithm/3Sum/)
-		- [3Sum Closest](/posts/algorithm/3Sum Closest/)
-		- [4Sum](/posts/algorithm/4Sum/)
-		- [Remove Element](/posts/algorithm/Remove Element/)
-		- [Move Zeroes](/posts/algorithm/Move Zeroes/)
-		- [Next Permutation](/posts/algorithm/Next Permutation/)
-		- [Permutation Sequence](/posts/algorithm/Permutation Sequence/)
-		- [Valid Sudoku](/posts/algorithm/Valid Sudoku/)
-		- Trapping Rain Water
-		- Rotate Image
+		- [Remove Duplicates from Sorted Array](/posts/algorithm/001.Remove.Duplicates.from.Sorted.Array/)
+		- [Remove Duplicates from Sorted Array II](/posts/algorithm/002.Remove.Duplicates.from.Sorted.Array.II/)
+		- [Longest Consecutive Sequence](/posts/algorithm/003.Longest.Consecutive.Sequence/)
+		- [Two Sum](/posts/algorithm/004.Two.Sum/)
+		- [3Sum](/posts/algorithm/005.3Sum/)
+		- [3Sum Closest](/posts/algorithm/006.3Sum.Closest/)
+		- [4Sum](/posts/algorithm/007.4Sum/)
+		- [Remove Element](/posts/algorithm/008.Remove.Element/)
+		- [Move Zeroes](/posts/algorithm/009.Move.Zeroes/)
+		- [Next Permutation](/posts/algorithm/010.Next.Permutation/)
+		- [Permutation Sequence](/posts/algorithm/011.Permutation.Sequence/)
+		- [Valid Sudoku](/posts/algorithm/012.Valid.Sudoku/)
+		- [Trapping Rain Water](/posts/algorithm/013.Trapping.Rain.Water/)
+		- [Rotate Image](/posts/algorithm/014.Rotate.Image/)
 		- Plus One
 		- Climbing Stairs
 		- Set Matrix Zeroes
