@@ -21,22 +21,22 @@ headtxt: 系列
 ### 文章目录
 - Linear List
 	- Array
-		- [Remove Duplicates from Sorted Array](/posts/algorithm/001.Remove.Duplicates.from.Sorted.Array/)
-		- [Remove Duplicates from Sorted Array II](/posts/algorithm/002.Remove.Duplicates.from.Sorted.Array.II/)
-		- [Longest Consecutive Sequence](/posts/algorithm/003.Longest.Consecutive.Sequence/)
-		- [Two Sum](/posts/algorithm/004.Two.Sum/)
-		- [3Sum](/posts/algorithm/005.3Sum/)
-		- [3Sum Closest](/posts/algorithm/006.3Sum.Closest/)
-		- [4Sum](/posts/algorithm/007.4Sum/)
-		- [Remove Element](/posts/algorithm/008.Remove.Element/)
-		- [Move Zeroes](/posts/algorithm/009.Move.Zeroes/)
-		- [Next Permutation](/posts/algorithm/010.Next.Permutation/)
-		- [Permutation Sequence](/posts/algorithm/011.Permutation.Sequence/)
-		- [Valid Sudoku](/posts/algorithm/012.Valid.Sudoku/)
-		- [Trapping Rain Water](/posts/algorithm/013.Trapping.Rain.Water/)
-		- [Rotate Image](/posts/algorithm/014.Rotate.Image/)
-		- Plus One
-		- Climbing Stairs
+		- [算法题丨Remove Duplicates from Sorted Array](/posts/algorithm/001.Remove.Duplicates.from.Sorted.Array/)
+		- [算法题丨Remove Duplicates from Sorted Array II](/posts/algorithm/002.Remove.Duplicates.from.Sorted.Array.II/)
+		- [算法题丨Longest Consecutive Sequence](/posts/algorithm/003.Longest.Consecutive.Sequence/)
+		- [算法题丨Two Sum](/posts/algorithm/004.Two.Sum/)
+		- [算法题丨3Sum](/posts/algorithm/005.3Sum/)
+		- [算法题丨3Sum Closest](/posts/algorithm/006.3Sum.Closest/)
+		- [算法题丨4Sum](/posts/algorithm/007.4Sum/)
+		- [算法题丨Remove Element](/posts/algorithm/008.Remove.Element/)
+		- [算法题丨Move Zeroes](/posts/algorithm/009.Move.Zeroes/)
+		- [算法题丨Next Permutation](/posts/algorithm/010.Next.Permutation/)
+		- [算法题丨Permutation Sequence](/posts/algorithm/011.Permutation.Sequence/)
+		- [算法题丨Valid Sudoku](/posts/algorithm/012.Valid.Sudoku/)
+		- [算法题丨Trapping Rain Water](/posts/algorithm/013.Trapping.Rain.Water/)
+		- [算法题丨Rotate Image](/posts/algorithm/014.Rotate.Image/)
+		- [算法题丨Plus One](/posts/algorithm/015.Plus.One/)
+		- [算法题丨Climbing Stairs](/posts/algorithm/016.Climbing.Stairs/)
 		- Set Matrix Zeroes
 		- Gas Station
 		- Candy

@@ -7,7 +7,7 @@ tags:
 categories: 软件设计
 date: 2017-06-04
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/fcdfa376-c8ee-4cb3-9953-3b70ed097aad.jpg)
 
 ### 摘要
 之前我们实现了叫地主、玩家和电脑自动出牌主要功能，但是还有个问题，出牌的时候，没有有效性检查和比较牌力大小。比如说，出牌3,4,5，目前是可以出牌的，然后下家可以出任何牌如3,6,9。

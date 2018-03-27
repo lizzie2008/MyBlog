@@ -7,7 +7,7 @@ tags:
 categories: 软件设计
 date: 2017-06-02
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/9c93ff41-2251-428d-9a13-d553c20b6d65.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/27c0a85c-6f29-4b2c-858d-d28009e12ab8.jpg)
 
 ### 摘要
 前面我们实现了点击开始游戏按钮，系统依次给玩家发牌的逻辑和动画，并展示当前的手牌。这期我们继续实现接下来的功能--叫地主。
