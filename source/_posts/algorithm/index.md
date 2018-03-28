@@ -20,8 +20,8 @@ headtxt: 系列
 <!-- more -->
 
 ### 文章目录
-- Linear List
-	- Array
+- 线性表（Linear List）
+	- 数组（Array）
 		- [算法题丨Remove Duplicates from Sorted Array](/posts/algorithm/001.Remove.Duplicates.from.Sorted.Array/)
 		- [算法题丨Remove Duplicates from Sorted Array II](/posts/algorithm/002.Remove.Duplicates.from.Sorted.Array.II/)
 		- [算法题丨Longest Consecutive Sequence](/posts/algorithm/003.Longest.Consecutive.Sequence/)
@@ -38,9 +38,9 @@ headtxt: 系列
 		- [算法题丨Rotate Image](/posts/algorithm/014.Rotate.Image/)
 		- [算法题丨Plus One](/posts/algorithm/015.Plus.One/)
 		- [算法题丨Climbing Stairs](/posts/algorithm/016.Climbing.Stairs/)
-		- Set Matrix Zeroes
-		- Gas Station
-		- Candy
+		- [算法题丨Set Matrix Zeroes](/posts/algorithm/017.Set.Matrix.Zeroes/)
+		- [算法题丨Gas Station](/posts/algorithm/018.Gas.Station/)
+		- [算法题丨Candy](/posts/algorithm/019.Candy/)
 		- Majority Element
 		- Rotate Array
 		- Contains Duplicate
@@ -49,7 +49,7 @@ headtxt: 系列
 		- Product of Array Except Self
 		- Game of Life
 		- Increasing Triplet Subsequence
-	- Single Linked List
+	- 单链表（Single Linked List）
 		- Reverse Linked List
 		- Odd Even Linked List
 		- Add Two Numbers
@@ -67,7 +67,7 @@ headtxt: 系列
 		- Reorder List
 		- LRU Cache
 		- Palindrome Linked List
-- String
+- 字符串（String）
 	- Valid Palindrome
 	- Implement strStr()
 	- String to Integer (atoi)
@@ -86,18 +86,18 @@ headtxt: 系列
 	- Length of Last Word
 	- Isomorphic Strings
 	- Word Pattern
-- Stack & Queue
-	- Stack
+- 栈和队列（Stack & Queue）
+	- 栈（Stack）
 		- Min Stack
 		- Valid Parentheses
 		- Longest Valid Parentheses
 		- Largest Rectangle in Histogram
 		- Evaluate Reverse Polish Notation
 		- Implement Stack using Queues
-	- Queue
+	- 队列（Queue）
 		- Implement Queue using Stacks
-- Binary Tree
-	- Binary Tree Traversal
+- 二叉树（Binary Tree）
+	- 二叉树的遍历（Binary Tree Traversal）
 		- Binary Tree Preorder Traversal
 		- Binary Tree Inorder Traversal
 		- Binary Tree Postorder Traversal
@@ -113,10 +113,10 @@ headtxt: 系列
 		- Balanced Binary Tree
 		- Flatten Binary Tree to Linked List
 		- Populating Next Right Pointers in Each Node II
-	- Construct Binary Tree
+	- 二叉树的构建（Construct Binary Tree）
 		- Construct Binary Tree from Preorder and Inorder Traversal
 		- Construct Binary Tree from Inorder and Postorder Traversal		
-	- Binary Search Trees
+	- 二叉查找树（Binary Search Trees）
 		- Unique Binary Search Trees
 		- Unique Binary Search Trees II
 		- Validate Binary Search Tree
@@ -124,7 +124,7 @@ headtxt: 系列
 		- Convert Sorted List to Binary Search Tree
 		- LCA of BST
 		- Kth Smallest Element in a BST
-	- Recursive of Binary Tree
+	- 二叉树的递归（Recursive of Binary Tree）
 		- Minimum Depth of Binary Tree
 		- Maximum Depth of Binary Tree
 		- Path Sum
@@ -133,28 +133,28 @@ headtxt: 系列
 		- Populating Next Right Pointers in Each Node
 		- Sum Root to Leaf Numbers
 		- LCA of Binary Tree
-	- Segment Tree
+	- 线段树（Segment Tree）
 		- Range Sum Query - Mutable
-- Sort
-	- Insertion Sort
+- 排序（Sort）
+	- 插入排序（Insertion Sort）
 		- Insertion Sort List
-	- Merge Sort
+	- 归并排序（Merge Sort）
 		- Merge Two Sorted Arrays
 		- Merge Two Sorted Lists
 		- Merge k Sorted Lists
 		- Sort List
-	- Quick Sort
+	- 快速排序（Quick Sort）
 		- Sort Colors
 		- Kth Largest Element in an Array
-	- Bucket Sort
+	- 桶排序（Bucket Sort）
 		- First Missing Positive
-	- Count Sort
+	- 计数排序（Count Sort）
 		- H-Index
-	- Radix Sort
+	- 基数排序（Radix Sort）
 		- Maximum Gap
-	- Other Sort
+	- 其他排序（Other Sort）
 		- Largest Number
-- Search
+- 查找（Search）
 	- Search for a Range
 	- Search Insert Position
 	- Search in Rotated Sorted Array
@@ -165,18 +165,18 @@ headtxt: 系列
 	- Find Minimum in Rotated Sorted Array II
 	- Median of Two Sorted Arrays
 	- H-Index II
-- Violence Enumeration
+- 暴力枚举法（Violence Enumeration）
 	- Subsets
 	- Subsets II
 	- Permutations
 	- Permutations II
 	- Combinations
 	- Letter Combinations of a Phone Number
-- Breadth-First Search	
+- 广度优先搜索（Breadth-First Search）	
 	- Word Ladder
 	- Word Ladder II
 	- Surrounded Regions
-- Depth-First Search	
+- 深度优先搜索（Depth-First Search）	
 	- Additive Number
 	- Palindrome Partitioning
 	- Unique Paths

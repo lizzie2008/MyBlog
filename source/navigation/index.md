@@ -46,3 +46,6 @@ date: 2017-01-01
 - [算法题丨Rotate Image](/posts/algorithm/014.Rotate.Image/)
 - [算法题丨Plus One](/posts/algorithm/015.Plus.One/)
 - [算法题丨Climbing Stairs](/posts/algorithm/016.Climbing.Stairs/)
+- [算法题丨Set Matrix Zeroes](/posts/algorithm/017.Set.Matrix.Zeroes/)
+- [算法题丨Gas Station](/posts/algorithm/018.Gas.Station/)
+- [算法题丨Candy](/posts/algorithm/019.Candy/)
