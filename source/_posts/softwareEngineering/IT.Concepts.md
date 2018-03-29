@@ -5,7 +5,7 @@ tags:
 categories: 软件工程
 date: 2017-06-01
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/3baf0c7a-7e45-4d4e-84d0-a5e9831f9f25.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/8b3f0146-2df5-4b66-9adc-65274d413b96.jpg)
  
 ### 软件架构
 
