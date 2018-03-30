@@ -23,7 +23,7 @@ date: 2017-01-01
  - 书籍已读 
   - 《大型分布式网站架构设计与实践》 ★★★
   - 《大型网站系统与Java中间件实践》 ★★★
-  - 《大型网站技术架构：核心原理与案例分析》 ★★★★★
+  - [《大型网站技术架构：核心原理与案例分析》](https://www.processon.com/view/link/5abcc7cfe4b0a248b0f07122) ★★★★★
   - 《高性能网站建设指南》 ★★★★★
  - 书籍在读
   - 《Web信息架构设计大型网站(第3版)》
@@ -33,6 +33,8 @@ date: 2017-01-01
     - [你所不知道的库存超限做法](https://www.cnblogs.com/scy251147/p/8371636.html)
     - [设计模式-吕震宇](http://www.cnblogs.com/zhenyulu/category/6930.html?Show=All)
     - [Why Choose .NET Core?](http://freecontent.manning.com/why-choose-net-core)
+    - [数据库大批量SQL插入性能优化](https://blog.csdn.net/qq_22855325/article/details/76087138)
+    - [数据结构 图的定义和搜索方法（清晰图解）](https://www.cnblogs.com/idreamo/p/8621259.html)
 
 ## 联系我 
 
