@@ -43,7 +43,7 @@ headtxt: 系列
 		- [算法题丨Candy](/posts/algorithm/019.Candy/)
 		- [算法题丨Majority Element](/posts/algorithm/020.Majority.Element/)
 		- [算法题丨Rotate Array](/posts/algorithm/021.Rotate.Array/)
-		- Contains Duplicate
+		- [算法题丨Contains Duplicate](/posts/algorithm/022.Contains.Duplicate/)
 		- Contains Duplicate II
 		- Contains Duplicate III
 		- Product of Array Except Self

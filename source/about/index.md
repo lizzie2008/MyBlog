@@ -21,10 +21,10 @@ date: 2017-01-01
 >以下是博主近一段时间学习和研究的，有笔记、心得和相关资料，欢迎大家多多关注，咱们一同进步！
 
  - 书籍已读 
-  - 《大型分布式网站架构设计与实践》 ★★★
+  - [《大型分布式网站架构设计与实践》](https://www.processon.com/view/link/5ac9d281e4b09bf96ae3283b) ★★★★★
   - 《大型网站系统与Java中间件实践》 ★★★
   - [《大型网站技术架构：核心原理与案例分析》](https://www.processon.com/view/link/5abcc7cfe4b0a248b0f07122) ★★★★★
-  - 《高性能网站建设指南》 ★★★★★
+  - [《高性能网站建设指南》](https://www.processon.com/view/link/5ac9cbfce4b04a5e961cd4b5) ★★★★
  - 书籍在读
   - 《Web信息架构设计大型网站(第3版)》
   - 《实用负载均衡技术：网站性能优化攻略》
@@ -35,20 +35,15 @@ date: 2017-01-01
     - [Why Choose .NET Core?](http://freecontent.manning.com/why-choose-net-core)
     - [数据库大批量SQL插入性能优化](https://blog.csdn.net/qq_22855325/article/details/76087138)
     - [数据结构 图的定义和搜索方法（清晰图解）](https://www.cnblogs.com/idreamo/p/8621259.html)
+    - [一致性哈希算法原理](https://www.cnblogs.com/lpfuture/p/5796398.html)
 
 ## 联系我 
 
 ---
 
-- 个人网站：[www.lancel0t.cn](https://www.lancel0t.cn)
-- 个人博客：[blog.lancel0t.cn](https://blog.lancel0t.cn)
-- 博客园&emsp;：[www.cnblogs.com/lizzie-xhu](https://www.cnblogs.com/lizzie-xhu)
-- GitHub&ensp;：[github.com/lizzie2008](https://github.com/lizzie2008)
-- Email&ensp;&ensp;&nbsp;：[34878936@qq.com](mailto:34878936@qq.com)
-- QQ&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;：34878936
-- 公众号&emsp;：原子蛋Live+
-
-<image style="height:150px;border:none;" src="https://mysite.bj.bcebos.com/images/profile/wechat.gif"/>
+<html><head><title></title><style type="text/css"> div.c3 {display: table;} div.c2 {display: table-row;} div.c1 {display: table-cell;}</style></head><body><div class="c3"><div class="c2"><div class="c1">☺ 个人网站</div><div class="c1">：[www.lancel0t.cn](https://www.lancel0t.cn)</div></div><div class="c2"><div class="c1">☺ 个人博客</div><div class="c1">：[blog.lancel0t.cn](https://blog.lancel0t.cn)</div></div><div class="c2"><div class="c1">☺ 博客园</div><div class="c1">：[www.cnblogs.com/lizzie-xhu](https://www.cnblogs.com/lizzie-xhu)</div></div><div class="c2"><div class="c1">☺ GitHub</div><div class="c1">：[github.com/lizzie2008](https://github.com/lizzie2008)</div></div><div class="c2"><div class="c1">☺ Email</div><div class="c1">：[34878936@qq.com](mailto:34878936@qq.com)</div></div><div class="c2"><div class="c1">☺ QQ</div><div class="c1">：34878936</div></div><div class="c2"><div class="c1">☺ 公众号</div><div class="c1">：原子蛋Live+</div></div></div></body></html>
+<br/>
+<image style="height:150px;" src="https://mysite.bj.bcebos.com/images/profile/wechat.gif"/>
 
 ## 给我留言 
 
