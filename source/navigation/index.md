@@ -29,6 +29,9 @@ date: 2017-01-01
 ### 项目管理 相关
 - [管理文档 | 研发基本流程](/posts/softwareEngineering/Development.Flow/)
 
+### 工作笔记 相关
+- [工作笔记 | Visual Studio 调用 Web Service](/posts/workdiary/WebService.With.VS/)
+
 ### 算法 相关
 - [算法题丨目录索引](/posts/algorithm/)
 - [算法题丨Remove Duplicates from Sorted Array II](/posts/algorithm/002.Remove.Duplicates.from.Sorted.Array.II/)
@@ -52,3 +55,5 @@ date: 2017-01-01
 - [算法题丨Majority Element](/posts/algorithm/020.Majority.Element/)
 - [算法题丨Rotate Array](/posts/algorithm/021.Rotate.Array/)
 - [算法题丨Contains Duplicate](/posts/algorithm/022.Contains.Duplicate/)
+- [算法题丨Contains Duplicate II](/posts/algorithm/023.Contains.Duplicate.II/)
+- [算法题丨Contains Duplicate III](/posts/algorithm/024.Contains.Duplicate.III/)

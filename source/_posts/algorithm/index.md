@@ -44,8 +44,8 @@ headtxt: 系列
 		- [算法题丨Majority Element](/posts/algorithm/020.Majority.Element/)
 		- [算法题丨Rotate Array](/posts/algorithm/021.Rotate.Array/)
 		- [算法题丨Contains Duplicate](/posts/algorithm/022.Contains.Duplicate/)
-		- Contains Duplicate II
-		- Contains Duplicate III
+		- [算法题丨Contains Duplicate II](/posts/algorithm/023.Contains.Duplicate.II/)
+		- [算法题丨Contains Duplicate III](/posts/algorithm/024.Contains.Duplicate.III/)
 		- Product of Array Except Self
 		- Game of Life
 		- Increasing Triplet Subsequence
