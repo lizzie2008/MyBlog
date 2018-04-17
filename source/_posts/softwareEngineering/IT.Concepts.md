@@ -6,7 +6,9 @@ categories: 软件工程
 date: 2017-06-01
 ---
 ![avatar](https://mysite.bj.bcebos.com/images/articles/8b3f0146-2df5-4b66-9adc-65274d413b96.jpg)
- 
+
+ <!-- more -->
+
 ### 软件架构
 
 #### 领域驱动设计
