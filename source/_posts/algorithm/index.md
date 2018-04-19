@@ -51,12 +51,12 @@ headtxt: 系列
 		- [算法题丨Increasing Triplet Subsequence](/posts/algorithm/027.Increasing.Triplet.Subsequence/)
 	- 单链表（Single Linked List）
 		- [算法题丨Reverse Linked List](/posts/algorithm/028.Reverse.Linked.List/)
-		- Odd Even Linked List
-		- Add Two Numbers
-		- Reverse Linked List II
-		- Partition List
-		- Remove Duplicates from Sorted List
-		- Remove Duplicates from Sorted List II
+		- [算法题丨Reverse Linked List II](/posts/algorithm/029.Reverse.Linked.List.II/)
+		- [算法题丨Odd Even Linked List](/posts/algorithm/030.Odd.Even.Linked.List/)
+		- [算法题丨Add Two Numbers](/posts/algorithm/031.Add.Two.Numbers/)
+		- [算法题丨Partition List](/posts/algorithm/032.Partition.List/)
+		- [算法题丨Remove Duplicates from Sorted List](/posts/algorithm/033.Remove.Duplicates.from.Sorted.List/)
+		- [算法题丨Remove Duplicates from Sorted List II](/posts/algorithm/034.Remove.Duplicates.from.Sorted.List.II/)
 		- Rotate List
 		- Remove Nth Node From End of List
 		- Swap Nodes in Pairs

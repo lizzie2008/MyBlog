@@ -36,6 +36,7 @@ date: 2017-01-01
     - [数据库大批量SQL插入性能优化](https://blog.csdn.net/qq_22855325/article/details/76087138)
     - [数据结构 图的定义和搜索方法（清晰图解）](https://www.cnblogs.com/idreamo/p/8621259.html)
     - [一致性哈希算法原理](https://www.cnblogs.com/lpfuture/p/5796398.html)
+    - [通俗易懂，互联网的常见推荐算法](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651961068&idx=1&sn=d271a2aa035b87eede2cbedb6f147087&chksm=bd2d03308a5a8a269ec3c50e478e54266f3d6b3c6cbac83fa48da335406eca2aef1e013ea21f&mpshare=1&scene=23&srcid=0418LBYxyCvKB90EOb26g5uD#rd)
 
 ## 联系我 
 
