@@ -21,10 +21,10 @@ date: 2017-01-01
 - [.NET Core 搭建个人网站 | (7) Linux系统移植](/posts/mywebsite/MyWebSite07/)
 
 ### 游戏开发 相关
-- [Unity3D斗地主游戏 | (1) 发牌功能实现](posts/chinesepoker/ChinesePoker01)
-- [Unity3D斗地主游戏 | (2) 叫地主功能实现](posts/chinesepoker/ChinesePoker02)
-- [Unity3D斗地主游戏 | (3) 地主牌显示和出牌逻辑](posts/chinesepoker/ChinesePoker03)
-- [Unity3D斗地主游戏 | (4) 出牌判断大小](posts/chinesepoker/ChinesePoker04)
+- [Unity3D斗地主游戏 | (1) 发牌功能实现](/posts/chinesepoker/ChinesePoker01)
+- [Unity3D斗地主游戏 | (2) 叫地主功能实现](/posts/chinesepoker/ChinesePoker02)
+- [Unity3D斗地主游戏 | (3) 地主牌显示和出牌逻辑](/posts/chinesepoker/ChinesePoker03)
+- [Unity3D斗地主游戏 | (4) 出牌判断大小](/posts/chinesepoker/ChinesePoker04)
 
 ### 项目管理 相关
 - [管理文档 | 研发基本流程](/posts/softwareEngineering/Development.Flow/)
@@ -67,3 +67,11 @@ date: 2017-01-01
 - [算法题丨Partition List](/posts/algorithm/032.Partition.List/)
 - [算法题丨Remove Duplicates from Sorted List](/posts/algorithm/033.Remove.Duplicates.from.Sorted.List/)
 - [算法题丨Remove Duplicates from Sorted List II](/posts/algorithm/034.Remove.Duplicates.from.Sorted.List.II/)
+- [算法题丨Rotate List](/posts/algorithm/035.Rotate.List/)
+- [算法题丨Remove Nth Node From End of List](/posts/algorithm/036.Remove.Nth.Node.From.End.of.List/)
+- [算法题丨Swap Nodes in Pairs](/posts/algorithm/037.Swap.Nodes.in.Pairs/)
+- [算法题丨Reverse Nodes in k-Group](/posts/algorithm/038.Reverse.Nodes.in.k-Group/)
+- [算法题丨Copy List with Random Pointer](/posts/algorithm/039.Copy.List.with.Random.Pointer/)
+- [算法题丨Linked List Cycle](/posts/algorithm/040.Linked.List.Cycle/)
+- [算法题丨Linked List Cycle II](/posts/algorithm/041.Linked.List.Cycle.II/)
+- [算法题丨Reorder List](/posts/algorithm/042.Reorder.List/)

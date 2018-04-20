@@ -9,7 +9,7 @@ date: 2018-02-01
 top: 100
 headtxt: 系列
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/fd2b4ddb-83a0-46bd-b08e-25acc4872168.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/7bbff61b-e995-4c36-abd2-1466a82366b4.jpg)
 
 ### 介绍
 &emsp;&emsp;本系列的受众目标是对算法有兴趣的、愿意和我一起进步、学习和提高的同学，要求有一定的数据结构基础，链表、排序、二叉树等等一些基本知识，可能需要一些基础的数学知识。如果这方面有所欠缺或不懂的，请自行找相关资料看一下，笔者就不再累述了。
@@ -57,14 +57,14 @@ headtxt: 系列
 		- [算法题丨Partition List](/posts/algorithm/032.Partition.List/)
 		- [算法题丨Remove Duplicates from Sorted List](/posts/algorithm/033.Remove.Duplicates.from.Sorted.List/)
 		- [算法题丨Remove Duplicates from Sorted List II](/posts/algorithm/034.Remove.Duplicates.from.Sorted.List.II/)
-		- Rotate List
-		- Remove Nth Node From End of List
-		- Swap Nodes in Pairs
-		- Reverse Nodes in k-Group
-		- Copy List with Random Pointer
-		- Linked List Cycle
-		- Linked List Cycle II
-		- Reorder List
+		- [算法题丨Rotate List](/posts/algorithm/035.Rotate.List/)
+		- [算法题丨Remove Nth Node From End of List](/posts/algorithm/036.Remove.Nth.Node.From.End.of.List/)
+		- [算法题丨Swap Nodes in Pairs](/posts/algorithm/037.Swap.Nodes.in.Pairs/)
+		- [算法题丨Reverse Nodes in k-Group](/posts/algorithm/038.Reverse.Nodes.in.k-Group/)
+		- [算法题丨Copy List with Random Pointer](/posts/algorithm/039.Copy.List.with.Random.Pointer/)
+		- [算法题丨Linked List Cycle](/posts/algorithm/040.Linked.List.Cycle/)
+		- [算法题丨Linked List Cycle II](/posts/algorithm/041.Linked.List.Cycle.II/)
+		- [算法题丨Reorder List](/posts/algorithm/042.Reorder.List/)
 		- LRU Cache
 		- Palindrome Linked List
 - 字符串（String）

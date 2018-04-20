@@ -7,7 +7,7 @@ tags:
 categories: 软件设计
 date: 2017-06-01
 ---
-![avatar](https://mysite.bj.bcebos.com/images/articles/7bbff61b-e995-4c36-abd2-1466a82366b4.jpg)
+![avatar](https://mysite.bj.bcebos.com/images/articles/cd344cf5-9275-4e5a-8035-c297f3a44601.jpg)
 
 ### 摘要
 园子荒废多年，闲来无事，用Unity3D来尝试做一个简单的小游戏，一方面是对最近研究的Unity3D有点总结，一方面跟广大的园友相互学习和提高。话不多说，进入正题~
