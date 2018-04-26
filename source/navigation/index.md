@@ -33,7 +33,7 @@ date: 2017-01-01
 - [工作笔记 | Visual Studio 调用 Web Service](/posts/workdiary/WebService.With.VS/)
 
 ### 算法 相关
-- [算法题丨目录索引](/posts/algorithm/)
+- [算法题丨Remove Duplicates from Sorted Array](/posts/algorithm/001.Remove.Duplicates.from.Sorted.Array)
 - [算法题丨Remove Duplicates from Sorted Array II](/posts/algorithm/002.Remove.Duplicates.from.Sorted.Array.II/)
 - [算法题丨Longest Consecutive Sequence](/posts/algorithm/003.Longest.Consecutive.Sequence/)
 - [算法题丨Two Sum](/posts/algorithm/004.Two.Sum/)
@@ -75,3 +75,12 @@ date: 2017-01-01
 - [算法题丨Linked List Cycle](/posts/algorithm/040.Linked.List.Cycle/)
 - [算法题丨Linked List Cycle II](/posts/algorithm/041.Linked.List.Cycle.II/)
 - [算法题丨Reorder List](/posts/algorithm/042.Reorder.List/)
+- [算法题丨LRU Cache](/posts/algorithm/043.LRU.Cache/)
+- [算法题丨Palindrome Linked List](/posts/algorithm/044.Palindrome.Linked.List/)
+- [算法题丨Valid Palindrome](/posts/algorithm/045.Valid.Palindrome/)
+- [算法题丨Implement strStr()](/posts/algorithm/046.Implement.strStr/)
+- [算法题丨String to Integer (atoi)](/posts/algorithm/047.String.to.Integer/)
+- [算法题丨Add Binary](/posts/algorithm/048.Add.Binary/)
+- [算法题丨Longest Palindromic Substring](/posts/algorithm/049.Longest.Palindromic.Substring/)
+- [算法题丨Regular Expression Matching](/posts/algorithm/050.Regular.Expression.Matching/)
+- [算法题丨Wildcard Matching](/posts/algorithm/051.Wildcard.Matching/)

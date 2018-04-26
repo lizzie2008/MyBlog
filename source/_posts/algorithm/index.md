@@ -65,16 +65,16 @@ headtxt: 系列
 		- [算法题丨Linked List Cycle](/posts/algorithm/040.Linked.List.Cycle/)
 		- [算法题丨Linked List Cycle II](/posts/algorithm/041.Linked.List.Cycle.II/)
 		- [算法题丨Reorder List](/posts/algorithm/042.Reorder.List/)
-		- LRU Cache
-		- Palindrome Linked List
+		- [算法题丨LRU Cache](/posts/algorithm/043.LRU.Cache/)
+		- [算法题丨Palindrome Linked List](/posts/algorithm/044.Palindrome.Linked.List/)
 - 字符串（String）
-	- Valid Palindrome
-	- Implement strStr()
-	- String to Integer (atoi)
-	- Add Binary
-	- Longest Palindromic Substring
-	- Regular Expression Matching
-	- Wildcard Matching
+	- [算法题丨Valid Palindrome](/posts/algorithm/045.Valid.Palindrome/)
+	- [算法题丨Implement strStr()](/posts/algorithm/046.Implement.strStr/)
+	- [算法题丨String to Integer (atoi)](/posts/algorithm/047.String.to.Integer/)
+	- [算法题丨Add Binary](/posts/algorithm/048.Add.Binary/)
+	- [算法题丨Longest Palindromic Substring](/posts/algorithm/049.Longest.Palindromic.Substring/)
+	- [算法题丨Regular Expression Matching](/posts/algorithm/050.Regular.Expression.Matching/)
+	- [算法题丨Wildcard Matching](/posts/algorithm/051.Wildcard.Matching/)
 	- Longest Common Prefix
 	- Valid Number
 	- Integer to Roman

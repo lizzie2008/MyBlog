@@ -26,6 +26,7 @@ date: 2017-01-01
   - [《大型网站技术架构：核心原理与案例分析》](https://www.processon.com/view/link/5abcc7cfe4b0a248b0f07122) ★★★★★
   - [《高性能网站建设指南》](https://www.processon.com/view/link/5ac9cbfce4b04a5e961cd4b5) ★★★★
  - 书籍在读
+  - [《Nginx高性能Web服务器详解》](https://www.processon.com/view/link/5adf0e2ce4b02dfcf9c3d2a9)
   - 《Web信息架构设计大型网站(第3版)》
   - 《实用负载均衡技术：网站性能优化攻略》
  - 他山之玉
