@@ -84,3 +84,8 @@ date: 2017-01-01
 - [算法题丨Longest Palindromic Substring](/posts/algorithm/049.Longest.Palindromic.Substring/)
 - [算法题丨Regular Expression Matching](/posts/algorithm/050.Regular.Expression.Matching/)
 - [算法题丨Wildcard Matching](/posts/algorithm/051.Wildcard.Matching/)
+- [算法题丨Longest Common Prefix](/posts/algorithm/052.Longest.Common.Prefix/)
+- [算法题丨Valid Number](/posts/algorithm/053.Valid.Number/)
+- [算法题丨Integer to Roman](/posts/algorithm/054.Integer.to.Roman/)
+- [算法题丨Roman to Integer](/posts/algorithm/055.Roman.to.Integer/)
+- [算法题丨Count and Say](/posts/algorithm/056.Count.and.Say/)
